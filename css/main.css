@@ -296,10 +296,11 @@ h6
 }
 .scholourcenter p
 {
-	text-align:justify;	
+	text-align:left;	
 	font-size:14px;
-	color:#514c43;
-	font-weight: normal;
+	color:#000;
+	font-weight: 300;
+	font-family :verdana, arial, helvetica, helve, sans-serif;
 }
 #abotgyan
 {	
@@ -332,15 +333,16 @@ h6
 
 .scholourcenter
 {
-	text-align:justify;
-	color:#81335c;
+	text-align:left;
+	color:#000;
 	
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:15px;
-	
+	font-weight:300;
 	background-color:#FFF;
 	border:2px solid #FFF;
 	padding:20px;
+	display:block;
 }
 .scholourcenter h6
 {
@@ -444,4 +446,31 @@ h6
 .map iframe
 {
 	padding-bottom:10px
+}
+.scholourcenter ul{
+	padding:0;
+	margin:0;
+}
+.scholourcenter ul li{
+	list-style:none;
+	padding:5px;
+	font-weight:300 !important;
+	font-size:15px;
+	font-family :verdana, arial, helvetica, helve, sans-serif;
+	
+}
+label{
+	font-weight:300 !important;
+}
+.total_quiz{
+	padding:0 0 10px 0;
+	margin:0 0 10px 10px;
+	border-bottom:1px solid #E6E6E6;
+}
+.texttitle{
+	text-align:right;
+	padding:10px 0 20px 0;
+	font-size:16px;
+	font-weight:300 !important;
+	color:#000;
 }

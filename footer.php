@@ -65,17 +65,18 @@ $(document).ready(function(){
 </style> 
  
   <div class="row" id="ffluid">
-        	<div class="col-md-6"><!--col-sm-offset-4-->
+        	<div class="col-md-12"><!--col-sm-offset-4-->
             	
           <div class="bs-example">
     <!-- Button HTML (to Trigger Modal) -->
-  <div class="row">
-  	<div class="col-sm-4">
+  <div style="width:980px; margin:0 auto; padding:10px 0 0 0; ">
+  	<div class="col-md-6" style="padding:0;">
    		<p><a href="#myModal" class="btn btn-md btn-primary" data-toggle="modal">Feedback</a></p>
-   			</div>
-     <div class="col-md-6">
+   	</div>
+     <div class="col-md-6" style="text-align:right; padding:0;">
     	<p style="padding:6px;">Copyright &copy; 2015 Designed by <a href="http://www.c9live.com" target="_new">Cloud9</a></p>
-        </div>
+      </div>
+		<div class="clr"></div>
   </div>          
     
     <!-- Modal HTML -->
