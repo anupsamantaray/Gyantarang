@@ -65,7 +65,7 @@ $(document).ready(function(){
 </style> 
  
   <div class="row" id="ffluid">
-        	<div class="col-sm-6 col-sm-offset-4">
+        	<div class="col-md-6"><!--col-sm-offset-4-->
             	
           <div class="bs-example">
     <!-- Button HTML (to Trigger Modal) -->
@@ -73,7 +73,7 @@ $(document).ready(function(){
   	<div class="col-sm-4">
    		<p><a href="#myModal" class="btn btn-md btn-primary" data-toggle="modal">Feedback</a></p>
    			</div>
-     <div class="col-sm-6">
+     <div class="col-md-6">
     	<p style="padding:6px;">Copyright &copy; 2015 Designed by <a href="http://www.c9live.com" target="_new">Cloud9</a></p>
         </div>
   </div>          

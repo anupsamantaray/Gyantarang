@@ -122,7 +122,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
     <div class="container">
       <div class="row">  
         
-       <div class="col-md-8"> 
+       <div class="col-md-10"> 
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -140,11 +140,12 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
                 <li class="header act_miss"><a href="mission.php" >Mission</a></li>
                 <li class="header act_scho"><a href="Scholarship.php" >Scholarship</a></li>
                	<li class="header act_cont"><a href="contactus.php">Contact Us</a></li>
+               	<li class="header act_cont"><a href="basic_quiz.php">Quizzes</a></li>
                	<li class="header act_cont"><a href="login.php">Member Login</a></li>
             </ul>
         </div>
         </div>
-        		<div class="col-sm-2 col-sm-offset-2">
+        		<div class="col-md-2"><!--col-sm-offset-2-->
                    <div id="sonarmenu">
                           <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="#s"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
                       </div>     
