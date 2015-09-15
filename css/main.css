@@ -1,0 +1,447 @@
+#sonarmenu
+{
+	padding:5px;
+}
+.navbar-nav>li>a
+{
+	padding-top:11px;
+	padding-bottom:11px;
+}
+
+a:hover, a:focus {
+text-decoration: none;
+}
+#mcol
+{
+	background:url(../bg.png);
+}
+body
+{
+	margin:0;
+	padding:0;
+	background-color:#17A0E2;
+	overflow-x:hidden;
+	
+}
+.logo
+{
+	text-align:justify;
+	padding:60px 40px;	
+}
+#imgradius{
+	border-radius:10%;
+}
+
+#margin
+{
+	margin-top:-1px;	
+}
+#colfluid
+{
+
+	background:#0876ab;
+	margin-top:-20px;	
+}
+
+.header
+{
+	
+	font-size:15px;
+	color:#ffffff;
+	 	
+}
+.header a:hover
+{
+	background-color:#76b419;
+	border-radius:10px;
+	
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color:#FFF;
+	border-radius:10px;
+}
+#abus
+{
+	background-color:#61a000;
+}
+.header:hover
+{
+	background-color:#76b419;
+	border-radius:10px;
+}
+.project
+{
+	font-size:18px;
+	height:30px;
+	background-color:#056fab;	
+	border:1px solid #056fab;
+}
+.center
+{
+	
+	font-size:16px;
+	height:30px;
+	background-color:#a0ab05;	
+	border:1px solid #a0ab05;
+}
+.center1
+{
+	font-size:15px;
+	
+	height:30px;
+	background-color:#a0ab05;	
+	border:1px solid #a0ab05;
+}
+.center2
+{
+	font-size:16px;
+	height:30px;
+	background-color:#056fab;	
+	border:1px solid #056fab;
+}
+.schocenter
+{
+	font-size:16px;
+	height:30px;
+	background-color:#a0ab05;	
+	border:1px solid #a0ab05;
+}
+.arrow
+{
+	font-size:20px;
+		width:50px;
+		background-color:#1a1a1a;	
+		height:30px;
+		margin-top:-1px;
+		margin-left:-1px;
+	
+}
+.arrow img
+{
+	margin-left:10px;
+	margin-top:2px;
+	padding:5px;
+	
+}
+
+.welborder
+{
+	height:200px;
+	background-color:#2f2483;
+	border:7px solid #673069;
+	border-radius:1%;
+}
+.welborderh2
+{
+	font-size:20px;
+	
+	color:#fff;
+	margin-left:50px;
+}
+.borderp
+{
+	font-size:10px;
+	color:#fff;
+	margin-left:40px;
+	margin-top:30px;
+}
+#services
+{
+	font-size:20px;
+	 color:#673069;
+	 border-left:0px;
+	 border-right:1px solid #fff;
+	
+}
+
+h4
+{	
+
+	
+	text-align:justify;
+	font-size:12px;
+	color:#FFF;
+	margin-left:52px;
+	margin-top:-28px;
+	border-top:2px soid #000;
+	
+}
+.border
+{
+	
+	padding:5px;
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #FFF;
+}
+.border1
+{
+	
+	padding:5px;
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #FFF;
+}
+#donatorBorder
+{
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:15px;
+	padding-top:3px;
+	text-align:justify;
+	box-shadow:2px 2px 5px 5px #6F99C8;
+	border-bottom: #6F99C8 solid 1px;
+}
+#ourdonator
+{
+	background-color:#333;
+	border-left:10px;
+	border-right:10px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+}
+.donator p
+{
+	padding-bottom:16px;
+	color:#534d4d;
+	border-bottom: #056fab dotted 1px;
+}
+.donator img
+{
+	margin-top:-3px;
+}
+.project
+{
+	font-size:16px;
+	height:30px;
+	background-color:#056fab;	
+	border:1px solid #056fab;
+}
+.ourcenter
+{
+	padding-bottom:20px;	
+	text-align:justify;
+	color:#7f7e7c;
+	font-size:12px;
+	background-color:#fff6e3;
+	border:2px solid #FFF;
+	box-shadow:3px 3px 3px  #CCCCCC; 
+	
+}
+.ourcenterproject
+{
+	color:#81335c;
+	font-weight: normal;
+	font-size:12px;
+	
+	box-shadow-right:3px #CCCCCC;
+	box-shadow:3px 3px 3px #CCCCCC;
+}
+.rm
+{
+	
+	float:right;
+	font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	
+}
+.ourcenter1
+{
+	
+	color:#81335c;
+	background-color:#f8efff;
+	border:2px solid #FFF;
+	box-shadow:3px 3px 3px #CCCCCC;
+}
+h5
+{
+	color:#f27283;
+	font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+h6
+{
+	text-align:justify;
+	color:#f27283;
+	font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	
+}
+.aboutgyan
+{
+	text-align:justify;
+	padding:5px;
+	color:#514C43;
+	font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	
+	
+}
+.aboutworks
+{
+	text-align:justify;
+	padding:8px;
+	color:#13507e;
+	font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.aboutgyan span
+{
+	
+	font-size:17px;
+	color:#000;
+}
+.scholourcenter p
+{
+	text-align:justify;	
+	font-size:14px;
+	color:#514c43;
+	font-weight: normal;
+}
+#abotgyan
+{	
+	
+	text-align:justify;
+	padding-left:20px;
+	padding-right:20px;
+	color:#514C43;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	
+}
+
+#ourcenter4
+{
+	
+	padding:5px;
+	text-align: justify;
+	color:#706c64;
+	font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	
+	background-color:#fff6e3;
+	border:2px solid #FFF;
+	box-shadow:3px 3px 3px #CCCCCC;
+	
+}
+
+
+.scholourcenter
+{
+	text-align:justify;
+	color:#81335c;
+	
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	
+	background-color:#FFF;
+	border:2px solid #FFF;
+	padding:20px;
+}
+.scholourcenter h6
+{
+	font-size:18px;
+	font-weight:normal;
+	font-style:italic;
+}
+
+#sc
+{
+	padding:5px;
+	text-align:justify;
+	color:#81335c;
+	
+	
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	
+	
+}
+#ffluid
+{
+	margin-right:0px;	
+	background-color:#fff;
+	border-top:3px solid #be1e76;
+}
+#ffluid p span a{
+	color:#FFF;
+}
+
+#cfluid
+{
+	background-color:#1c92ca;
+}
+#sugges
+{
+	
+	height:30px;
+	background-color:#666;
+	border-radius:15%;
+}
+#read
+{
+	font-size:12px;
+	text-align:center;
+    border-radius: 10px;
+    position: relative;
+    border: #47b2bc solid 1px;
+    background-color: #fff;
+    color: #33aab5;
+	text-decoration:none;
+}
+#read a:hover
+{
+	color:#333;
+	text-decoration:none;
+}
+#Amit
+{
+	height:auto;
+}
+
+.dotcolor
+{
+	font-size:20px;
+	font-family:"Arial", Gadget, sans-serif;
+	color:#899117;
+	padding:3px;
+	text-align:center;
+}
+.imgbox
+{
+	padding:10px; border:1px solid #CCCCCC; box-shadow:3px 3px 3px #CCCCCC;
+	border-radius:10px;
+	text-align:center;
+}
+#donatorWorks
+{
+	background:#ccc url(../bg.png) repeat;
+}
+.company_address
+{
+	background-image:url(../bg.png);
+}
+.company_address p{
+	font-size:12px;
+	color: #888;
+	padding:5px 20px;
+	font-family :verdana, arial, helvetica, helve, sans-serif;
+}
+.company_address a
+{
+	color:#0bbc43;
+}
+.map{
+	border:1px solid #C7C7C7;
+	padding-right:30px;
+	padding-top:10px;
+	
+}
+.map iframe
+{
+	padding-bottom:10px
+}
