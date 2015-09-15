@@ -1,10 +1,10 @@
 <?php include 'header.php';?>
 <style>
-.act_miss {
+.act_quiz {
 	background: #69a70b;
 	border-radius:10px;
 }
-.navbar-default .navbar-nav>.act_miss>a{
+.navbar-default .navbar-nav>.act_quiz>a{
 	color:#fff;
 }
 
@@ -13,20 +13,73 @@
 	padding-right:0px;
 }
 </style>
-
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("li.act_quiz").hover(function () {
+			$(this).children("ul.sub_act_quiz").toggle();
+		});
+	});
+</script>
 <div class="container">
 	<div class="row">
             <div class="col-md-12">  
              <div class="schocenter">
                 <div class="arrow">
                       <img src="images/center-1.png"></div>
-                      <h4 class="border1">Competitive Quiz</h4>
+                      <h4 class="border1">Basic Quiz</h4>
             		</div>
                  <div class="scholourcenter">
-                 <br />
-                 <p>Our mission to improve the quality of education in India and ensure that all children not only attend but also thrive in school is being accomplished by working in collaboration with the government, local communities, parents, teachers, volunteers, and civil society members. </p><br />
-                 <p>Our programmes aim to supplement rather than replace governmental efforts. They are implemented on a large scale to not only reach as many children as possible, but also to create an adoptable demonstration model for state governments.</p><br />
-                 <br /><br /><br />
+					<div class="col-md-12">
+						<h2 class="texttitle">For more quizzes <a href="#s"> Click Here</a></h2>
+						<div class="total_quiz">
+							<p class="quiz">1. A person throws a ball vertically upward with an initial velocity of 15 m/s.How high it goes?</p>
+							<ul>
+								<li>
+									<label>
+										<input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+										Option one is this and that
+									</label>
+								</li>
+								<li>
+									<label>
+										<input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+										Option one is this and that
+									</label>
+								</li>
+								<li>
+									<label>
+										<input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+										Option one is this and that
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="total_quiz">
+							<p class="quiz">1. A person throws a ball vertically upward with an initial velocity of 15 m/s.How high it goes?</p>
+							<ul>
+								<li>
+									<label>
+										<input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+										Option one is this and that
+									</label>
+								</li>
+								<li>
+									<label>
+										<input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+										Option one is this and that
+									</label>
+								</li>
+								<li>
+									<label>
+										<input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+										Option one is this and that
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="clr"></div>
 				</div>
 </div>
 </div>

@@ -143,8 +143,8 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
                	<li class="header act_quiz">
 					<a href="basic_quiz.php">Quizzes</a>
 					<ul class="dropdown-menu2 sub_act_quiz" style="display:none;">
-						<li><a href="#s">Basic Quiz</a></li>
-						<li><a href="#s">Competitive Quiz</a></li>
+						<li><a href="basic_quiz.php">Basic Quiz</a></li>
+						<li><a href="competitive_quiz.php">Competitive Quiz</a></li>
 					</ul>
 				</li>
                	<li class="header act_memlogin"><a href="login.php">Member Login</a></li>
