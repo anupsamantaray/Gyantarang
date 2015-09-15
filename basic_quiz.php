@@ -1,10 +1,10 @@
 <?php include 'header.php';?>
 <style>
-.act_miss {
+.act_quiz {
 	background: #69a70b;
 	border-radius:10px;
 }
-.navbar-default .navbar-nav>.act_miss>a{
+.navbar-default .navbar-nav>.act_quiz>a{
 	color:#fff;
 }
 
@@ -13,7 +13,13 @@
 	padding-right:0px;
 }
 </style>
-
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("li.act_quiz").hover(function () {
+			$(this).children("ul.sub_act_quiz").toggle();
+		});
+	});
+</script>
 <div class="container">
 	<div class="row">
             <div class="col-md-12">  

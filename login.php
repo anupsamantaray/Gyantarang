@@ -5,13 +5,13 @@ include 'header.php';
 <script src="js/bookmarkscroll.js"  ></script>
 
 <style>
-.act_abt {
+.act_memlogin {
 	
 	background-color: #69a70b;
 	border-radius:10px;
 	
 }
-.navbar-default .navbar-nav>.act_abt>a{
+.navbar-default .navbar-nav>.act_memlogin>a{
 	color:#fff;
 }
 
