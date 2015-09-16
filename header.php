@@ -141,11 +141,13 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
                 <li class="header act_scho"><a href="Scholarship.php" >Scholarship</a></li>
                	<li class="header act_cont"><a href="contactus.php">Contact Us</a></li>
                	<li class="header act_quiz">
-					<a href="basic_quiz.php">Quizzes</a>
-					<ul class="dropdown-menu2 sub_act_quiz" style="display:none;">
-						<li><a href="basic_quiz.php">Basic Quiz</a></li>
-						<li><a href="competitive_quiz.php">Competitive Quiz</a></li>
-					</ul>
+					<a href="basic_quiz.php" class="actquixz act_quiz">Quizzes</a>
+					<div class="sub_act_quiz" style="display:none; margin-top: -2px;">
+						<ul class="dropdown-menu2 act_quiz">
+							<li class="act_quiz"><a href="basic_quiz.php">Basic Quiz</a></li>
+							<li class="act_quiz"><a href="competitive_quiz.php">Competitive Quiz</a></li>
+						</ul>
+					</div>
 				</li>
                	<li class="header act_memlogin"><a href="login.php">Member Login</a></li>
             </ul>

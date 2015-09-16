@@ -16,7 +16,7 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("li.act_quiz").hover(function () {
-			$(this).children("ul.sub_act_quiz").toggle();
+			$(this).find(".sub_act_quiz").toggle();
 		});
 	});
 </script>
