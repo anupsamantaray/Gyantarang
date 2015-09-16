@@ -7,20 +7,17 @@ include 'connection.php';
 ?>
 <script src="js/bookmarkscroll.js"  ></script>
 <style>
-	.act_abt {
-		background-color: #69a70b;
-		border-radius:10px;
-		
-	}
-	.navbar-default .navbar-nav>.act_abt>a{
-		color:#fff;
-	}
+.act_abt {
+	background-color: #69a70b;
+	border-radius:10px;
+	
+}
+.navbar-default .navbar-nav>.act_abt>a{
+	color:#fff;
+}
 </style>
-<style>
-	textarea {
-	resize: none;
-	}
-</style>
+
+
 <div class="container" id="mcol">
 	<br />
    <div class="row">
@@ -36,12 +33,10 @@ include 'connection.php';
 					<form method="POST" action="donatersadd1.php" enctype="multipart/form-data">
 						<div class="col-md-6">
 							<br />
-							<input type="text" name="Dname" class="form-control" placeholder = "Enter Donator name">
+							<input type="text" name="Dname" class="form-control" placeholder = "Enter Donator name" required>
 							<br />
 							
-							<textarea rows="5" cols="50" name="Message" placeholder="Enter your text here...">
-							
-							</textarea>
+							<textarea rows="5" cols="50" name="Message" placeholder="Enter your text here..." required></textarea>
 							</br></br>
 							<input type="file" name="Filename" class="form-control" >
 							</br>
@@ -63,12 +58,10 @@ include 'connection.php';
 				<div class="row"> 
 					<form method="POST" action="studentadd.php" enctype="multipart/form-data">
 						<div class="col-md-6"><br />
-							<input type="text" name="Sname" class="form-control" placeholder = "Student Name">
+							<input type="text" name="Sname" class="form-control" placeholder = "Student Name" required>
 							<br />
 							
-							<textarea rows="5" cols="50" name="Message" placeholder="Enter your text here...">
-							
-							</textarea>
+							<textarea rows="5" cols="50" name="Message" placeholder="Enter your text here..." required></textarea>
 							</br></br>
 							<input type="file" name="Filename" class="form-control" >
 							</br>
