@@ -24,6 +24,7 @@
 	});
 </script>
 <body>
+
 <?php
 	$tot=0;
 	if(isset($_POST['submit'])){
