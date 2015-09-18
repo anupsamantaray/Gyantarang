@@ -131,7 +131,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 				<div class="tab-pane active" id="home2">
 					<div class="subreg">
 						<!--h2><a href="javascript:void(0)" class="closse popclose"><img src="images/cross.png"></a></h2-->
-						<form name="creataccount" action="creatactionlogin.php" method="post" enctype="multipart/form-data">
+						<form name="creataccount" action="creataction.php" method="post" enctype="multipart/form-data">
 							<table>
 								<tbody>
 								<tr>
@@ -145,7 +145,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 								<tr>
 									<td></td>
 									<!--td><a href="javascript:void(0)" class="loginbutton">Register</a></td-->
-									<td><input name="Register" class="company_button" type="submit"></td>
+									<td><input name="Login" class="company_button" type="submit"></td>
 								</tr>
 								</tbody>
 							</table>

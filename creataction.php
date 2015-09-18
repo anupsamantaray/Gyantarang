@@ -1,5 +1,21 @@
 <?php
 include_once('function.php');
+if(isset($_POST['Login'])){
+	$email=htmlentities($_REQUEST['usremail']);
+    $pass=htmlentities($_REQUEST['usrpass']);
+	if(($email != "") && ($pass != "")){
+		$fetch = mysql_query("select * from `login` where `email`='$email' AND `password`='$pass'") or die(mysql_error());
+		$reslt = mysql_num_rows($fetch);
+		if($reslt>0){
+			$err = 'You have successfully logged in.';
+		}else{
+			$err = 'Email and password does not matched. Please try again.';
+		}
+		//echo "<script>location.href=index.php?err=$err</script>";
+		header("location:index.php?err=$err");
+	}
+}
+
 if(isset($_POST['Register'])){
     $name=htmlentities($_REQUEST['usrname']);
     $class=htmlentities($_REQUEST['usrclass']);
@@ -10,10 +26,10 @@ if(isset($_POST['Register'])){
      $school=htmlentities($_REQUEST['usrschool']);
       $city=htmlentities($_REQUEST['usrcity']);
    
-    if($name!="" && $phone!="" && $email!="" &&  $pass==$confirm)
+    if($name != "" && $phone != "" && $email != "" &&  $pass == $confirm)
     {
      $fet=mysql_query("select * from `login` where `email`='$email'")or die(mysql_error());
-     $res=mysql_numrows($fet);
+     $res=mysql_num_rows($fet);
     if($res==0)
     {
 		if(!empty($_FILES['fileToUpload']))
@@ -42,8 +58,10 @@ if(isset($_POST['Register'])){
     else{
 	 $err="An account already exists with the same email address. Login or create an account with another email address.";
 	}
-    }else{ $err="Enter correct password";}
-    //header("location:index.php?err=$err");
-	echo '<script>location.href="index.php?err=$err"</script>';
+    }else{ 
+		$err="Enter correct password";
+	}
+    header("location:index.php?err=$err");
+	//echo "<script>location.href=index.php?err=$err</script>";
 }
 ?>
