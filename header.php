@@ -83,7 +83,6 @@ div#wd {
 
 <script src="js/dw_con_scroller.js" type="text/javascript"></script>
 <script type="text/javascript">
-
 if ( DYN_WEB.Scroll_Div.isSupported() ) {
 	
 	DYN_WEB.Event.domReady( function() {
@@ -99,7 +98,6 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 </script>
 
 <script type="text/javascript">
-
 if ( DYN_WEB.Scroll_Div.isSupported() ) {
 	
 	DYN_WEB.Event.domReady( function() {
@@ -113,73 +111,71 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 }
 
 </script>
-
-
 </head>
 <body>
 <nav id="myNavbar" class=" navbar-default  navbar" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
-      <div class="row">  
-        
-       <div class="col-md-10"> 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav ">
-				<li  class="header act_abt"><a href="index.php">About Us</a></li>
-				<li class="header act_work"><a href="ourworks.php" >Our Works</a></li>
-                <li class="header act_miss"><a href="mission.php" >Mission</a></li>
-                <li class="header act_scho"><a href="Scholarship.php" >Scholarship</a></li>
-               	<li class="header act_cont"><a href="contactus.php">Contact Us</a></li>
-               	<li class="header act_quiz">
-					<a href="basic_quiz.php" class="actquixz act_quiz">Quizzes</a>
-					<div class="sub_act_quiz" style="display:none; margin-top: -2px;">
-						<ul class="dropdown-menu2 act_quiz">
-							<li class="act_quiz"><a href="basic_quiz.php">Basic Quiz</a></li>
-							<li class="act_quiz"><a href="competitive_quiz.php">Competitive Quiz</a></li>
-						</ul>
-					</div>
-				</li>
-               	<li class="header act_memlogin"><a href="login.php">Member Login</a></li>
-            </ul>
-        </div>
-        </div>
-        		<div class="col-md-2"><!--col-sm-offset-2-->
-                   <div id="sonarmenu">
-                          <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="#s"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
-                      </div>     
-                </div>
-      </div>  
+		<div class="row">  
+			<div class="col-md-10"> 
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="nav navbar-nav ">
+						<li  class="header act_abt"><a href="index.php">About Us</a></li>
+						<li class="header act_work"><a href="ourworks.php" >Our Works</a></li>
+						<li class="header act_miss"><a href="mission.php" >Mission</a></li>
+						<li class="header act_scho"><a href="Scholarship.php" >Scholarship</a></li>
+						<li class="header act_cont"><a href="contactus.php">Contact Us</a></li>
+						<li class="header act_quiz">
+							<a href="basic_quiz.php" class="actquixz act_quiz">Quizzes</a>
+							<div class="sub_act_quiz" style="display:none; margin-top: -2px;">
+								<ul class="dropdown-menu2 act_quiz">
+									<li class="act_quiz"><a href="basic_quiz.php">Basic Quiz</a></li>
+									<li class="act_quiz"><a href="competitive_quiz.php">Competitive Quiz</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="header act_memlogin"><a href="login.php">Member Login</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2"><!--col-sm-offset-2-->
+			   <div id="sonarmenu">
+					  <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="#s"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
+				  </div>     
+			</div>
+		</div>  
     </div>
 </nav>
 <div class="container" id="colfluid">
-<div class="row">
-   <div class="col-sm-5">
-      <img class="logo" src="images/ngo-logo.png" />
-     </div>
-        <div class="col-sm-6">
-        <section id="dg-container" class="dg-container">
+	<div class="row">
+		<div class="col-sm-5">
+			<img class="logo" src="images/ngo-logo.png" />
+		</div>
+		<div class="col-sm-6">
+			<section id="dg-container" class="dg-container">
 				<div class="dg-wrapper">
 					<a href="#"><img src="images/1.png" class="img-rounded img-responsive" id="imgradius" alt="image01" width="350" height="100"></a>
-					<a href="#"><img class="img-rounded img-responsive" id="imgradius" src="images/2.jpg" alt="image02" width="350" height="100"></a>
-					<a href="#"><img class="img-rounded img-responsive" id="imgradius" src="images/3.jpg" alt="image03" width="350" height="100"></a>
+					<!--a href="#"><img class="img-rounded img-responsive" id="imgradius" src="images/2.jpg" alt="image02" width="350" height="100"></a>
+					<a href="#"><img class="img-rounded img-responsive" id="imgradius" src="images/3.jpg" alt="image03" width="350" height="100"></a-->
+					
+					<a href="javascript:void(0)"><img class="img-rounded img-responsive" id="imgradius" src="images/slid1.jpg" alt="slid1" width="350" height="100"></a>
+					<a href="javascript:void(0)"><img class="img-rounded img-responsive" id="imgradius" src="images/slid2.jpg" alt="slid2" width="350" height="100"></a>
 					
 				</div>
-				<!--nav>	
-					<span class="dg-prev">&lt;</span>
-					<span class="dg-next">&gt;</span>
-				</nav-->
+					<!--nav>	
+						<span class="dg-prev">&lt;</span>
+						<span class="dg-next">&gt;</span>
+					</nav-->
 			</section>
+		</div>
+	</div>
 </div>
-</div>
-</div>
-

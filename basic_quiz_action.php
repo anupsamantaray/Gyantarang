@@ -17,11 +17,11 @@
 }
 </style>
 <script type="text/javascript">
-	$(document).ready(function() {
-		$("li.act_quiz").hover(function () {
-			$(this).find(".sub_act_quiz").toggle();
-		});
+$(document).ready(function() {
+	$("li.act_quiz").hover(function () {
+		$(this).find(".sub_act_quiz").toggle();
 	});
+});
 </script>
 <body>
 <?php
@@ -95,7 +95,7 @@
 								if(!empty($_POST['1'])){
 									if($_POST['1']=='1'){
 							 ?>
-										1.) 11.5m &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+										1.) 11.5m &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
 							 <?php
 									}
 									else{
@@ -117,7 +117,7 @@
 									if($_POST['1']=='2')
 								{
 						 ?>
-									2.) 12.5m &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+									2.) 12.5m &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 						  <?php
 								}
 								else{
@@ -138,7 +138,7 @@
 							if(!empty($_POST['1'])){
 									if($_POST['1']=='3'){
 								?>
-										  3.)  8m &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+										  3.)  8m &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 							  <?php
 									}
 									else{
@@ -159,7 +159,7 @@
 							if(!empty($_POST['1'])){
 								if($_POST['1']=='4'){
 						 ?>
-								 4.) 6m &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+								 4.) 6m &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 						 <?php
 								}
 								else{
@@ -197,7 +197,7 @@
 						   if(!empty($_POST['2'])){
 								if($_POST['2']=='1'){
 						 ?>
-								1.) Force &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+								1.) Force &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 						 <?php
 								}
 								else{
@@ -218,7 +218,7 @@
 						   if(!empty($_POST['2'])){ 
 								if($_POST['2']=='2'){
 						 ?>
-									2.) Velocity&nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+									2.) Velocity&nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
 						 <?php
 								}
 								else{
@@ -241,7 +241,7 @@
 									if($_POST['2']=='3')
 									{
 								 ?>
-										3.) Acceleration &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+										3.) Acceleration &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 							 <?php
 									}
 									else{
@@ -262,7 +262,7 @@
 							if(!empty($_POST['2'])){ 
 								if($_POST['2']=='4'){
 									?>
-										4.) All of these &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+										4.) All of these &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 									<?php
 									}
 									else{
@@ -298,7 +298,7 @@
 								 <?php
 								 if(!empty($_POST['3'])){ 
 										if($_POST['3']=='1'){
-											?>1.) due to inertia of rest, road is left behind and man reaches forward &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+											?>1.) due to inertia of rest, road is left behind and man reaches forward &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 										<?php
 										 }
 										else{
@@ -319,7 +319,7 @@
 								 if(!empty($_POST['3'])){ 
 										if($_POST['3']=='2'){
 									 ?>
-											2.) due to inertia of motion upper part of body continues to be in motion in forward direction while feet come to rest as soon as they touch the road &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+											2.) due to inertia of motion upper part of body continues to be in motion in forward direction while feet come to rest as soon as they touch the road &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 								 <?php
 										}
 										else{
@@ -338,7 +338,7 @@
 								<?php
 								if(!empty($_POST['3'])){
 									 if($_POST['3']=='3'){
-								 ?>		3.) he leans forward as a matter of habit &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+								 ?>		3.) he leans forward as a matter of habit &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
 								 <?php
 									}
 									else{
@@ -358,7 +358,7 @@
 						  <?php
 						  if(!empty($_POST['3'])){
 								if($_POST['3']=='4'){
-							 ?>		4.) of the combined effect of all the three factors stated in (1), (2) and (3)&nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+							 ?>		4.) of the combined effect of all the three factors stated in (1), (2) and (3)&nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 							 <?php
 								}
 								else{
@@ -394,7 +394,7 @@
 						  <?php
 						   if(!empty($_POST['4'])){
 								 if($_POST['4']=='1'){
-							 ?>		1.) Pulling of a cart &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+							 ?>		1.) Pulling of a cart &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 							 <?php 
 								}
 								else{
@@ -414,7 +414,7 @@
 							 if(!empty($_POST['4'])){
 									if($_POST['4']=='2'){
 								 ?>
-										2.) Stretching of a coiled spring &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+										2.) Stretching of a coiled spring &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 							  <?php 
 									}
 									else{
@@ -433,7 +433,7 @@
 							<?php
 							if(!empty($_POST['4'])){
 									if($_POST['4']=='3'){
-								 ?>		3.) Kicking of a football &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+								 ?>		3.) Kicking of a football &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
 								 <?php 
 									}
 									else{
@@ -453,7 +453,7 @@
 							if(!empty($_POST['4'])){
 								if($_POST['4']=='4'){
 							 ?>
-									4.) Electrical force &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+									4.) Electrical force &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
 						  <?php 
 								}
 								else{
@@ -489,7 +489,7 @@
                      <?php
 					 if(!empty($_POST['5'])){
 							 if($_POST['5']=='1'){
-						 ?>		1.) No force acts on it &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>		1.) No force acts on it &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                         <?php 
 							}
 							else{
@@ -509,7 +509,7 @@
 							 if($_POST['5']=='2')
 					 		{
 						 ?>
-                        		 2.) It is very light &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                        		 2.) It is very light &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php 
 							}
 							else
@@ -529,7 +529,7 @@
 					if(!empty($_POST['5'])){
 					 		if($_POST['5']=='3'){
 						 ?>
-							3.) The air exert the frictional force &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+							3.) The air exert the frictional force &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                           <?php 
 							}
 							else{
@@ -546,7 +546,7 @@
                       <?php
 					  if(!empty($_POST['5'])){
 					 		if($_POST['5']=='4'){
-						 ?>		4.) The earth attract it &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+						 ?>		4.) The earth attract it &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                          <?php 
 							}
 							else{

@@ -17,11 +17,11 @@
 }
 </style>
 <script type="text/javascript">
-	$(document).ready(function() {
-		$("li.act_quiz").hover(function () {
-			$(this).find(".sub_act_quiz").toggle();
-		});
+$(document).ready(function() {
+	$("li.act_quiz").hover(function () {
+		$(this).find(".sub_act_quiz").toggle();
 	});
+});
 </script>
 <body>
 <?php
@@ -93,27 +93,30 @@ if(isset($_POST['submit'])){
  }?>
 <div id="container">
 	<div class="row">
-            <div class="col-md-12">  
-             <div class="schocenter">
+		<div class="col-md-12">  
+			<div class="schocenter">
                 <div class="arrow">
-				  <img src="images/center-1.png"></div>
-				  <h4 class="border1">Basic Quiz</h4>
+					<img src="images/center-1.png">
 				</div>
-                 <div class="scholourcenter">
-					<a href="#openModal" style="color:blue;" id="clickid"></a>
-					<table>
-                    <tr>
-                    		<td align="center">
-                            	<h1> 
-                                	Your score is <?php echo($tot); ?> out of 7
-                                </h1>
-                             </td>
+				<h4 class="border1">Basic Quiz</h4>
+			</div>
+			<div class="scholourcenter">
+				<a href="#openModal" style="color:blue;" id="clickid"></a>
+				<table>
+					<tr>
+						<td align="center">
+							<h1> 
+								Your score is <?php echo($tot); ?> out of 7
+							</h1>
+						</td>
                     </tr>
                     <tr>
                     	<td style="background-color:#efefef;"><span style="font-size:22px;font-weight:bold;padding-left:10px;">Question 1</span></td>
                     </tr>
                      <tr>
-                      <td><b> Directions A person throws a ball vertically upward with an initial velocity of 15 m/s.How long the ball is in air before it comes to his hand?</b></td>
+						<td>
+							<b> Directions A person throws a ball vertically upward with an initial velocity of 15 m/s.How long the ball is in air before it comes to his hand?</b>
+						</td>
                      </tr>
                      <tr><td style="padding-left:15px;">
                      <?php 
@@ -122,7 +125,7 @@ if(isset($_POST['submit'])){
 							if($_POST['1']=='1')
 							{
 					 ?>
-                    			1.) 2.0 s &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+                    			1.) 2.0 s &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                      <?php
 							}
 							else
@@ -146,7 +149,7 @@ if(isset($_POST['submit'])){
 							if($_POST['1']=='2')
 							{
 					 ?>
-                     			2.) 1.0 s &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                     			2.) 1.0 s &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                       <?php
 							}
 							else
@@ -169,7 +172,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['1']=='3')
 							{
 					 ?>
-                  				  3.)  3.06 s &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                  				  3.)  3.06 s &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                       <?php
 							}
 							else
@@ -192,7 +195,7 @@ if(isset($_POST['submit'])){
 							if($_POST['1']=='4')
 							{
 					 ?>
-			                     4.) 5.01 s &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+			                     4.) 5.01 s &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                      <?php
 							}
 							else
@@ -237,7 +240,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['2']=='1')
 							{
 					 ?>
-                     			1.) There is no force acting on it &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                     			1.) There is no force acting on it &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                      <?php
 							}
 							else
@@ -261,7 +264,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['2']=='2')
 							{
 					 ?>
-                     			2.) The force acting on it not in contact with it&nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+                     			2.) The force acting on it not in contact with it&nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                      <?php
 							}
 							else
@@ -285,7 +288,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['2']=='3')
 					 		{
 						 ?>
-                     			3.) The combination of forces acting on it balances each other &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                     			3.) The combination of forces acting on it balances each other &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                      <?php
 					 		}
 					 		else
@@ -308,7 +311,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['2']=='4')
 					 		{
 						 ?>
-                     			4.) The combination of forces acting on it balances each other &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                     			4.) The combination of forces acting on it balances each other &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                         <?php
 					 		}
 					 		else
@@ -350,7 +353,7 @@ if(isset($_POST['submit'])){
 						{ 
 							 if($_POST['3']=='1')
 							 {
-						 ?>			1.) upward &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>			1.) upward &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php
 					 		 }
 					 		else
@@ -373,7 +376,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['3']=='2')
 					 		{
 						 ?>
-                     			2.) downward &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                     			2.) downward &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                      <?php
 					 		}
 					 		else
@@ -394,7 +397,7 @@ if(isset($_POST['submit'])){
 						{
 							 if($_POST['3']=='3')
 					 		{
-						 ?>		3.) horizontal &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+						 ?>		3.) horizontal &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                          <?php
 					 		}
 							else
@@ -415,7 +418,7 @@ if(isset($_POST['submit'])){
 						{
 					 		if($_POST['3']=='4')
 					 		{
-						 ?>		4.) at an angle upward&nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>		4.) at an angle upward&nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php
 					 		}
 					 		else
@@ -455,7 +458,7 @@ if(isset($_POST['submit'])){
 						{
 							 if($_POST['4']=='1')
 							 {
-						 ?>			1.) Irreversible change  &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>			1.) Irreversible change  &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php 
 							 }
 							 else
@@ -476,7 +479,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['4']=='2')
 					 		{
 						 ?>
-                     			2.) Reversible change  &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                     			2.) Reversible change  &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                       <?php 
 							}
 							else
@@ -496,7 +499,7 @@ if(isset($_POST['submit'])){
 						{
 					 		if($_POST['4']=='3')
 					 		{
-						 ?>		3.) Desirable change &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>		3.) Desirable change &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php 
 							}
 							else
@@ -518,7 +521,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['4']=='4')
 					 		{
 						 ?>
-                     			4.) None of these &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+                     			4.) None of these &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                       <?php 
 							}
 							else
@@ -561,7 +564,7 @@ if(isset($_POST['submit'])){
 						{
 							 if($_POST['5']=='1')
 					 		{
-						 ?>		1.) Temperature &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>		1.) Temperature &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                         <?php 
 							}
 							else
@@ -582,7 +585,7 @@ if(isset($_POST['submit'])){
 							 if($_POST['5']=='2')
 					 		{
 						 ?>
-                        		 2.) Pressure &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                        		 2.) Pressure &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php 
 							}
 							else
@@ -603,7 +606,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['5']=='3')
 					 		{
 						 ?>
-                         		3.) Both &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                         		3.) Both &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                           <?php 
 							}
 							else
@@ -624,7 +627,7 @@ if(isset($_POST['submit'])){
 						{
 					 		if($_POST['5']=='4')
 					 		{
-						 ?>		4.) None of these &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+						 ?>		4.) None of these &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                          <?php 
 							}
 							else
@@ -666,7 +669,7 @@ if(isset($_POST['submit'])){
 						{
 							 if($_POST['6']=='1')
 					 		{
-						 ?>		1.) Acetaldehyde &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>		1.) Acetaldehyde &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                         <?php 
 							}
 							else
@@ -687,7 +690,7 @@ if(isset($_POST['submit'])){
 							 if($_POST['6']=='2')
 					 		{
 						 ?>
-                        		 2.) Formaldehyde &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                        		 2.) Formaldehyde &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php 
 							}
 							else
@@ -708,7 +711,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['6']=='3')
 					 		{
 						 ?>
-                         		3.) Acetone &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+                         		3.) Acetone &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                           <?php 
 							}
 							else
@@ -729,7 +732,7 @@ if(isset($_POST['submit'])){
 						{
 					 		if($_POST['6']=='4')
 					 		{
-						 ?>		4.) None of these &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>		4.) None of these &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                          <?php 
 							}
 							else
@@ -776,7 +779,7 @@ if(isset($_POST['submit'])){
 						{
 							 if($_POST['7']=='1')
 					 		{
-						 ?>		1.) Quantity of water increases with depth  &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+						 ?>		1.) Quantity of water increases with depth  &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                         <?php 
 							}
 							else
@@ -797,7 +800,7 @@ if(isset($_POST['submit'])){
 							 if($_POST['7']=='2')
 					 		{
 						 ?>
-                        		 2.) Density of water increases with depth &nbsp;&nbsp;&nbsp;<img src='correct.jpg'>
+                        		 2.) Density of water increases with depth &nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'>
                          <?php 
 							}
 							else
@@ -818,7 +821,7 @@ if(isset($_POST['submit'])){
 					 		if($_POST['7']=='3')
 					 		{
 						 ?>
-                         		3.) Pressure of water increases with depth &nbsp;&nbsp;&nbsp;<img src='wrong.jpg'>
+                         		3.) Pressure of water increases with depth &nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'>
                           <?php 
 							}
 							else
