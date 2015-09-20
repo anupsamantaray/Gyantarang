@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -113,6 +112,108 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 </script>
 </head>
 <body>
+<div class="wrapper">
+
+<!--regpopup-->
+
+<div class="regpopup" style="display:none;">
+	<div class="childreg">
+		<div class="tab-container tab-left tab-danger" id="partpoop">
+			<ul class="nav nav-tabs" style="margin:-1px 0 0 -1px">
+				<li class="active"><a href="#home2" data-toggle="tab">Login</a></li>
+				<li class=""><a href="#profile2" data-toggle="tab">Registration</a></li>
+			</ul>
+			<div class="tab-content" style="padding: 20px 15px;">
+				<div class="tab-pane active" id="home2">
+					<div class="subreg">
+						<!--h2><a href="javascript:void(0)" class="closse popclose"><img src="images/cross.png"></a></h2-->
+						<form name="creataccount" action="creataction.php" method="post" enctype="multipart/form-data">
+							<table>
+								<tbody>
+								<tr>
+									<td style="width:126px">Email</td>
+									<td><input name="usremail" class="form-control" id="" validation="blank|Provide your name." placeholder="Type your email" required="required" type="email"></td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td><input name="usrpass" class="form-control" id="pass" validation="blank|Provide your password." placeholder="Type your password" required="required" type="password"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<!--td><a href="javascript:void(0)" class="loginbutton">Register</a></td-->
+									<td><input name="Login" class="company_button" type="submit"></td>
+								</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+				<div class="tab-pane" id="profile2">
+					<div class="subreg">
+						<!--h2><a href="javascript:void(0)" class="closse popclose"><img src="images/cross.png"></a></h2-->
+						<form name="creataccount" action="creataction.php" method="post" enctype="multipart/form-data">
+							<table>
+								<tbody><tr>
+									<td style="width:126px">Name</td>
+									<td><input name="usrname" class="form-control" id="" validation="blank|Provide your name." placeholder="Type your name" required="required" type="username"></td>
+								</tr>
+								<tr>
+									<td>Email</td>
+									<td><input name="usremail" class="form-control" id="" validation="blank|Provide your name." placeholder="Type your email" required="required" type="email"></td>
+								</tr>
+								<tr>
+									<td>Contact</td>
+									<td><input name="usrcontact" class="form-control" id="" validation="blank|Provide your name." placeholder="Type your contact no." type="username"></td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td>
+										<select class="form-control" name="usrclass" id="usrclass">
+											<option value="0">Select</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+										<span class="errorcls" style="display:none; color:#FF5454;">Please select your class.</span>
+									</td>
+								</tr>
+								<tr>
+									<td>School</td>
+									<td><input name="usrschool" class="form-control" id="" validation="blank|Provide your name." placeholder="Type your school name" required="required" type="username"></td>
+								</tr>
+								<tr>
+									<td>City</td>
+									<td>
+										<input name="usrcity" class="form-control" id="" validation="blank|Provide your name." placeholder="Type your city name" required="required" type="username">
+									</td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td><input name="usrpass" class="form-control" id="pass" validation="blank|Provide your password." placeholder="Type your password" required="required" type="password"></td>
+								</tr>
+								<tr>
+									<td>Confirm Password</td>
+									<td><input name="usrcpass" class="form-control" id="cpass" validation="blank|Provide your confirm password." placeholder="Type password again" required="required" type="password"><span class="errorpass" style="display:none; color:#FF5454;">Password and confirm password should be same.</span></td>
+								</tr>
+								<tr>
+									<td>Upload Photo</td>
+									<td><input name="fileToUpload" class="form-control picuplode" id="usrphoto" validation="blank|Provide your photo." type="file"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<!--td><a href="javascript:void(0)" class="loginbutton">Register</a></td-->
+									<td><input name="Register" class="company_button" type="submit"></td>
+								</tr>
+							</tbody>
+						</table>
+						</form>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--regpopup-->
 <nav id="myNavbar" class=" navbar-default  navbar" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
@@ -176,6 +277,9 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 						<span class="dg-next">&gt;</span>
 					</nav-->
 			</section>
+
 		</div>
 	</div>
 </div>
+
+

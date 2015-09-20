@@ -247,7 +247,7 @@
 						<div class="clr"></div>
 				</div>
 				<div class="clr"></div>
-				<input type="submit" name="submit" value="submit">
+				<input type="submit" name="submit" value="submit" class="company_button2">
 			</form>
 			</div>
 		</div>

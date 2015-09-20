@@ -143,9 +143,9 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 		<div class="col-sm-6">
 			<section id="dg-container" class="dg-container">
 				<div class="dg-wrapper">
-					<a href="#"><img src="images/1.png" class="img-rounded img-responsive" id="imgradius" alt="image01" width="350" height="100"></a>
-					<a href="#"><img class="img-rounded img-responsive" id="imgradius" src="images/2.jpg" alt="image02" width="350" height="100"></a>
-					<a href="#"><img class="img-rounded img-responsive" id="imgradius" src="images/3.jpg" alt="image03" width="350" height="100"></a>
+					<a href="javascript:void(0)"><img src="images/1.png" class="img-rounded img-responsive" id="imgradius" alt="image01" width="350" height="100"></a>
+					<a href="javascript:void(0)"><img class="img-rounded img-responsive" id="imgradius" src="images/2.jpg" alt="image02" width="350" height="100"></a>
+					<a href="javascript:void(0)"><img class="img-rounded img-responsive" id="imgradius" src="images/3.jpg" alt="image03" width="350" height="100"></a>
 				</div>
 				<!--nav>	
 					<span class="dg-prev">&lt;</span>

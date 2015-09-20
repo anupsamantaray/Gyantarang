@@ -17,10 +17,19 @@
 }
 </style>
 <script type="text/javascript">
+
 $(document).ready(function() {
 	$("li.act_quiz").hover(function () {
 		$(this).find(".sub_act_quiz").toggle();
 	});
+	$(this).find(".regpopup").show();
+});
+$(document).mouseup(function(e){
+	var container = $(this).find("#partpoop");
+	if (!container.is(e.target) && container.has(e.target).length === 0){
+		$(this).find(".regpopup").hide();
+	}
+
 });
 </script>
 <body>
