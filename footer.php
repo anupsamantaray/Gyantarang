@@ -69,9 +69,9 @@ $(document).ready(function(){
             	
           <div class="bs-example">
     <!-- Button HTML (to Trigger Modal) -->
-  <div style="width:980px; margin:0 auto; padding:10px 0 0 0; ">
+  <div style="width:1030px; margin:0 auto; padding:10px 0 0 0; ">
   	<div class="col-md-6" style="padding:0;">
-   		<p><a href="#myModal" class="btn btn-md btn-primary" data-toggle="modal">Feedback</a></p>
+   		<p style="padding-left:24px; "><a href="#myModal" class="btn btn-md btn-primary" data-toggle="modal">Feedback</a></p>
    	</div>
      <div class="col-md-6" style="text-align:right; padding:0;">
     	<p style="padding:6px;">Copyright &copy; 2015 Designed by <a href="http://www.c9live.com" target="_new">Cloud9</a></p>

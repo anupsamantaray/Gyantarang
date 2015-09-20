@@ -218,7 +218,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
 		<div class="row">  
-			<div class="col-md-10"> 
+			<div class="col-md-10" style="padding:0 15px 0 0;"> 
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -228,7 +228,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 					</button>
 				</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="collapse navbar-collapse" id="navbarCollapse" style="padding-left: 0px; ">
 					<ul class="nav navbar-nav ">
 						<li  class="header act_abt"><a href="index.php">About Us</a></li>
 						<li class="header act_work"><a href="ourworks.php" >Our Works</a></li>
@@ -248,7 +248,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-2"><!--col-sm-offset-2-->
+			<div class="col-md-2" style="text-align:right; padding-right:0;"><!--col-sm-offset-2-->
 			   <div id="sonarmenu">
 					  <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="#s"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
 				  </div>     
