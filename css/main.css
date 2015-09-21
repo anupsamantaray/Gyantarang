@@ -502,7 +502,7 @@ label{
 	position:relative;
 }
 .childreg ul li a{
-	padding:15px 45px !important;
+	padding:15px 54px !important;
 	font-size:18px !important;
 	font-weight:300 !important;
 	color:#000;
@@ -579,4 +579,14 @@ label{
 	border: 1px solid #69A70B;
 	color:#000;
 	background:transparent;
+}
+.closse{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #9C9C9C;
+    padding: 10px !important;
+    font-size: 16px !important;
+    text-decoration: none;
+    font-family: 'open_sansregular';
 }

@@ -30,6 +30,9 @@
 				$(".morequizzs").click(function(){
 					$(".regpopup").show();
 				});
+				$(".popclose").click(function(){
+					$(".regpopup").hide();
+				});
 			});
 			$(document).mouseup(function(e){
 				var container = $(this).find("#partpoop");
@@ -37,9 +40,8 @@
 					$(this).find(".regpopup").hide();
 				}
 			});
-		</script> 
-      
-      <style type="text/css">
+</script> 
+<style type="text/css">
     .bs-example{
     	margin: 20px;
     }
@@ -136,6 +138,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 			<ul class="nav nav-tabs" style="margin:-1px 0 0 -1px">
 				<li class="active"><a href="#home2" data-toggle="tab">Login</a></li>
 				<li class=""><a href="#profile2" data-toggle="tab">Registration</a></li>
+				<li><a href="javascript:void(0)" class="closse popclose"><img src="images/cross.png"></a></li>
 			</ul>
 			<div class="tab-content" style="padding: 20px 15px;">
 				<div class="tab-pane active" id="home2">
