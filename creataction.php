@@ -8,6 +8,7 @@ if(isset($_POST['Login'])){
 		$reslt = mysql_num_rows($fetch);
 		if($reslt>0){
 			$err = 'You have successfully logged in.';
+			
 		}else{
 			$err = 'Email and password does not matched. Please try again.';
 		}
