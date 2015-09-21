@@ -14,11 +14,11 @@
 }
 </style>
 <script type="text/javascript">
-	$(document).ready(function() {
+	/*$(document).ready(function() {
 		$("li.act_quiz").hover(function () {
 			$(this).find(".sub_act_quiz").toggle();
 		});
-	});
+	});*/
 </script>
 <div class="container">
 	<div class="row">

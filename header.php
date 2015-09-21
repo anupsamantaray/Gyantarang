@@ -23,6 +23,11 @@
 					autoplay	:	true
 				});
 			});
+			$(document).ready(function() {
+				$("li.act_quiz").hover(function () {
+					$(this).find(".sub_act_quiz").toggle();
+				});
+			});
 		</script> 
       
       <style type="text/css">
