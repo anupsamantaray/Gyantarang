@@ -23,13 +23,13 @@ $(document).ready(function() {
 	});*/
 	$(this).find(".regpopup").show();
 });
-$(document).mouseup(function(e){
+/*$(document).mouseup(function(e){
 	var container = $(this).find("#partpoop");
 	if (!container.is(e.target) && container.has(e.target).length === 0){
 		$(this).find(".regpopup").hide();
 	}
 
-});
+});*/
 
 </script>
 <body>

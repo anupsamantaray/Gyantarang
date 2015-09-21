@@ -32,7 +32,7 @@
 			<div class="scholourcenter">
 				<form name="f" action="competitive_quiz_action.php" method="post">
 				<div class="col-md-12">
-					<h2 class="texttitle">For more quizzes <a href="#"> Click Here</a></h2>
+					<h2 class="texttitle">For more quizzes <a href="javascript:void(0);" class="morequizzs"> Click Here</a></h2>
 						<div class="total_quiz">
 							<p class="quiz">1. Directions A person throws a ball vertically upward with an initial velocity of 15 m/s.How long the ball is in air before it comes to his hand.?</p>
 							<ul>
