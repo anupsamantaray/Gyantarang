@@ -72,6 +72,39 @@
 			color:#000 !important;
 			margin:0;
 		}
+		.right_pert2 p{
+			font-size: 24px !important;
+			padding: 5px 0px 20px 0;
+			font-weight: 300 !important;
+			color: #69A70B;
+			margin: 0px;
+			text-align: center;
+		}
+		.right_pert2 p span{
+			font-size:18px !important;
+			color:#000;
+		}
+	.right_pert2 ul{
+		padding:0 !important;
+	}
+		.right_pert2 ul li{
+			display:block;
+			margin:0;
+		}
+		.right_pert2 ul li a{
+			padding:10px;
+			text-decoration: none;
+			display: block;
+			color: #f68b1c;
+			font-size: 16px;
+			font-weight: 300;
+			transition: all 0.4s ease;
+		}
+		.right_pert2 ul li a:hover{
+			color:#000;
+			padding:10px 15px;
+			text-decoration: none;
+		}
 	
 </style>
 <script type="text/javascript">
@@ -103,40 +136,13 @@ $(document).ready(function() {
 				</div>
 			</div>
 			<div class="col-md-10 right_pert2">
+				<p>Welcome <span> Arindam Chakraborty</span></p>
 				<h1>Title</h1>
-				<div class="subreg panel-body">
-					<table class="table table-hover">
-					  <thead>
-						<tr>
-						  <th>#</th>
-						  <th>First Name</th>
-						  <th>Last Name</th>
-						  <th>Username</th>
-						</tr>
-					  </thead>
-					  <tbody>
-						<tr>
-						  <td>1</td>
-						  <td>Mark</td>
-						  <td>Otto</td>
-						  <td>@mdo</td>
-						</tr>
-						<tr>
-						  <td>2</td>
-						  <td>Jacob</td>
-						  <td>Thornton</td>
-						  <td>@fat</td>
-						</tr>
-						<tr>
-						  <td>3</td>
-						  <td>Larry</td>
-						  <td>the Bird</td>
-						  <td>@twitter</td>
-						</tr>
-					  </tbody>
-                    </table>
-				</div>
-			</div>
+				<ul>
+					<li><a href="javascript:void(0);">Your Question</a></li>
+					<li><a href="javascript:void(0);">Your Question</a></li>
+					<li><a href="javascript:void(0);">Your Question</a></li>
+				</ul>
 			<div class="clr"></div>
 			</div>
 		</div>

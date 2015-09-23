@@ -49,10 +49,6 @@
 	 .form-horizontal .control-label{
         padding-top: 7px;
     }
-	
-</style>
-      
-<style type="text/css">
 
 h2{
     margin: 0;     
@@ -76,23 +72,27 @@ h2{
 	margin:auto;
 	
 }
-</style>
-
-<style type="text/css">
 div#wn { 
     position:relative; 
     height:240px; 
     overflow:hidden;
     }
 
-</style>
-
-<style type="text/css">
 div#wd { 
     position:relative; 
     height:130px; 
     overflow:hidden;
     }
+	.closse {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		color: #9C9C9C;
+		padding: 10px !important;
+		font-size: 16px !important;
+		text-decoration: none;
+		font-family: "open_sansregular";
+	}
 
 </style>
 
@@ -135,10 +135,10 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 <div class="regpopup" style="display:none;">
 	<div class="childreg">
 		<div class="tab-container tab-left tab-danger" id="partpoop">
-			<ul class="nav nav-tabs" style="margin:-1px 0 0 -1px">
+			<ul class="nav nav-tabs" style="margin:-1px 0 0 -1px; position:relative;">
 				<li class="active"><a href="#home2" data-toggle="tab">Login</a></li>
 				<li class=""><a href="#profile2" data-toggle="tab">Registration</a></li>
-				<li><a href="javascript:void(0)" class="closse popclose"><img src="images/cross.png"></a></li>
+				<a href="javascript:void(0)" class="closse popclose"><img src="images/cross.png"></a>
 			</ul>
 			<div class="tab-content" style="padding: 20px 15px;">
 				<div class="tab-pane active" id="home2">
