@@ -1,9 +1,20 @@
-<?php 
-include 'header.php';
+<?php
+session_start();
+if(isset($_SESSION['name'])){
+	include 'header_after_login.php';
+}else{
+	include 'header.php';
+}
 include 'connection.php';
 ?>
-<script src="js/bookmarkscroll.js"  ></script>
-
+<script src="js/bookmarkscroll.js"></script>
+<script type="text/javascript"></script>
+<?php
+	/*if(isset($_SESSION['name'])){*/
+	if(isset($_REQUEST['err'])){
+		echo "<script>alert('".$_REQUEST['err']."');</script>";
+	}
+?>
 <style>
 .act_abt {
 	

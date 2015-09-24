@@ -1,7 +1,6 @@
 <?php 
-	include_once("../function.php");
-	include '../header_after_login.php';
-	
+	include_once("function.php");
+	include 'header_after_login.php';
 	ob_start();
 	if(!$_SESSION['name']){
 	header("location:logout.php");
@@ -144,20 +143,34 @@ $(document).ready(function() {
 						<li><a href="javascript:void(0);"><i></i>Your Text</a></li>
 						<li><a href="javascript:void(0);"><i></i>Your Text</a></li-->
 					</ul>
+						<?php
+							$sqlsubject="Select * from  student_subject where class_id=".$class;
+							$result_subject=mysql_query($sqlsubject);
+							echo("<div class='navisationleft'><h3>Subjects</h3></div><br>");
+							if(mysql_num_rows($result_subject)>0){
+								while($rows_subject=mysql_fetch_assoc($result_subject)){
+									echo("<ul style='margin-left: 0px; padding: 1px 5px;'><li class='list active li_sub'><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a> </li>
+
+								</ul>");	
+								}
+							}
+						?>
 				</div>
 			</div>
 			<div class="col-md-10 right_pert2">
 				<p>Welcome <span> <?php if($_SESSION['name']){echo $_SESSION['name'];} ?></span></p>
-				<h1>Subjects</h1>
+				<!--h1>Subjects</h1-->
 				<ul>
 					<?php
-						$sqlsubject="Select * from  student_subject where class_id=".$class;
-						$result_subject=$con->query($sqlsubject);
-						if($result_subject->num_rows>0){
-							while($rows_subject=$result_subject->fetch_assoc()){
-								echo("<li><b><a href='ShowQuizes1.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a></b></li>");	
-							}
+					$sid=intval($_GET['sid']);
+					$sqlsubject="Select * from student_topic where class_id=".$class." and  subject_id=".$sid;
+					$result_subject=mysql_query($sqlsubject);
+					echo("<h1 style='padding-left: 40px;'>Topics</h1><br>");
+					if(mysql_num_rows($result_subject)>0){
+						while($rows_subject=mysql_fetch_assoc($result_subject)){
+							echo("<li><b><a href='ShowQuizesPartTwo.php?tid=".$rows_subject['id']."'>".$rows_subject['topic']."</a></b></li>");	
 						}
+					}
 					?>
 					<!--li><a href="javascript:void(0);">Your Question</a></li>
 					<li><a href="javascript:void(0);">Your Question</a></li>

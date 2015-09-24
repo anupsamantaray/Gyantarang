@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('function.php');
 if(isset($_POST['Login'])){
 	$email=htmlentities($_REQUEST['usremail']);
@@ -8,7 +9,11 @@ if(isset($_POST['Login'])){
 		$reslt = mysql_num_rows($fetch);
 		if($reslt>0){
 			$err = 'You have successfully logged in.';
-			
+			$res = mysql_fetch_assoc($fetch);
+			$_SESSION['name']=$res['name'];
+			$_SESSION['email']=$res['email'];
+			$_SESSION['slno']=$res['slno'];
+			$_SESSION['class']=$res['class'];
 		}else{
 			$err = 'Email and password does not matched. Please try again.';
 		}

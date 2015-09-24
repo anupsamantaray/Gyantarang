@@ -1,6 +1,6 @@
 <?php 
-	include_once("../function.php");
-	include '../header_after_login.php';
+	include_once("function.php");
+	include 'header_after_login.php';
 	
 	ob_start();
 	if(!$_SESSION['name']){
@@ -152,10 +152,11 @@ $(document).ready(function() {
 				<ul>
 					<?php
 						$sqlsubject="Select * from  student_subject where class_id=".$class;
-						$result_subject=$con->query($sqlsubject);
-						if($result_subject->num_rows>0){
-							while($rows_subject=$result_subject->fetch_assoc()){
-								echo("<li><b><a href='ShowQuizes1.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a></b></li>");	
+						//$result_subject=$con->query($sqlsubject);
+						$result_subject=mysql_query($sqlsubject);
+						if(mysql_num_rows($result_subject)>0){
+							while($rows_subject=mysql_fetch_assoc($result_subject)){
+								echo("<li><b><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a></b></li>");	
 							}
 						}
 					?>
