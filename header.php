@@ -13,33 +13,33 @@
 <link rel="stylesheet" href="css/form.css">
 <!--<link href="css/font-effect.css" rel="stylesheet" type="text/css" /> -->
 <!--<link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
-       <!--  <script type="text/javascript" src="js/jquery.min.js"></script>-->
-		<script type="text/javascript" src="js/jquery.gallery.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('#dg-container').gallery({
-					autoplay	:	true
-				});
-			});
-			$(document).ready(function() {
-				$("li.act_quiz").hover(function () {
-					$(this).find(".sub_act_quiz").toggle();
-				});
-				$(".morequizzs").click(function(){
-					$(".regpopup").show();
-				});
-				$(".popclose").click(function(){
-					$(".regpopup").hide();
-				});
-			});
-			$(document).mouseup(function(e){
-				var container = $(this).find("#partpoop");
-				if (!container.is(e.target) && container.has(e.target).length === 0){
-					$(this).find(".regpopup").hide();
-				}
-			});
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+<!--  <script type="text/javascript" src="js/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.gallery.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('#dg-container').gallery({
+		autoplay	:	true
+	});
+});
+$(document).ready(function(){
+	$("li.act_quiz").hover(function (){
+		$(this).find(".sub_act_quiz").toggle();
+	});
+	$(".morequizzs").click(function(){
+		$(".regpopup").fadeIn(600);
+	});
+	$(".popclose").click(function(){
+		$(".regpopup").fadeOut(600);
+	});
+});
+$(document).mouseup(function(e){
+	var container = $(this).find("#partpoop");
+	if (!container.is(e.target) && container.has(e.target).length === 0){
+		$(this).find(".regpopup").fadeOut(600);
+	}
+});
 </script> 
 <style type="text/css">
     .bs-example{
@@ -110,9 +110,6 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 	});
 }
 
-</script>
-
-<script type="text/javascript">
 if ( DYN_WEB.Scroll_Div.isSupported() ) {
 	
 	DYN_WEB.Event.domReady( function() {
@@ -298,5 +295,3 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 		</div>
 	</div>
 </div>
-
-
