@@ -131,7 +131,7 @@ $(document).ready(function() {
 				<div class="arrow">
 					<img src="images/center-1.png">
 				</div>
-					<h4 class="border1">Quizzes</h4>
+					<h4 class="border1">Quizs</h4>
 			</div>
 			<div class="col-md-2 left_pert">
 				<div class="navisationleft">
@@ -168,7 +168,7 @@ $(document).ready(function() {
 					echo("<h1 style='padding-left: 40px;'>Topics</h1><br>");
 					if(mysql_num_rows($result_subject)>0){
 						while($rows_subject=mysql_fetch_assoc($result_subject)){
-							echo("<li><b><a href='ShowQuizesPartThree.php?tid=".$rows_subject['id']."'>".$rows_subject['topic']."</a></b></li>");	
+							echo("<li><b><a href='ShowQuizesPartTwo.php?tid=".$rows_subject['id']."'>".$rows_subject['topic']."</a></b></li>");	
 						}
 					}
 					?>
