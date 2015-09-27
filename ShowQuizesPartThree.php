@@ -408,7 +408,7 @@ echo("<script>function showtime3()
 	});
 
 	/**
-	 * Set timer countdown to specyfied date
+	 * Set timer countdown to specified date
 	 */
 	$('#countdown-2').timeTo(
 	{
@@ -442,7 +442,7 @@ echo("<script>function showtime3()
 		fontSize: 48,
 		/*
 			captionSize: integer font-size by pixels for captions,
-			if 0 then calculate automaticaly, default 0;
+			if 0 then calculate automatically, default 0;
 		*/
 		captionSize: 14
 	});
@@ -592,8 +592,10 @@ function callsubmit1()
                   
                         </div><!--/form-->
 				</ul>
+			
 			<div class="clr"></div>
 			</div>
+			</form>
 		</div>
 	</div>
 </div>

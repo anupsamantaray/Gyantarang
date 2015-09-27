@@ -10,11 +10,8 @@ $result_question=mysql_query($sqlquestion);
 $arrquestion=array();
 $i=0;
 $j=0;
-if(mysql_num_rows($result_question)>0)
-{
-	
-	while($rows_question=mysql_fetch_assoc($result_question))
-	{
+if(mysql_num_rows($result_question)>0){
+	while($rows_question=mysql_fetch_assoc($result_question)){
 		$arrquestion[$i]=$rows_question['questions'];
 		$arranswer=explode("|",$rows_question['answers']);
 		$arranswer2[$i][1]=$arranswer[1];
@@ -22,12 +19,10 @@ if(mysql_num_rows($result_question)>0)
 		$arranswer2[$i][3]=$arranswer[3];
 		$arranswer2[$i][4]=$arranswer[4];
 		$correct[$i]=$arranswer2[$i][$rows_question['correct']];
-				$i++;		
+		$i++;		
 	}
 		//echo("<input type='text' name='hidecnt' value='".$i."' style='visibility:hidden;' ><input type='submit' value='submit' name='submit'>");
-
-
-
+		
 $j=$i;
 $k=1;
 $l=1;
@@ -61,7 +56,7 @@ echo("<br>");
 echo($up);
 echo("<br>");*/
 echo'<input type="text" name="txtlevel" value="'.$d.'" style="display:none;">';
-echo("<input type='button' value='submit' name='result' onclick='callsubmit1()' >");
+echo("<input type='button' value='submit' name='result' onclick='callsubmit1();'>");
 echo("</div>");
 }
 else

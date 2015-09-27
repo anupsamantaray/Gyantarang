@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <script src="js/jsjquery.min.js"></script>
+<script src="js/jquery.timeTo.min.js"></script>
+<script src="js/jquery.timeTo.js"></script>
 <!--<script src="js/jquery.min.js" ></script>  -->
 <script src="js/dw_con_scroller.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js"></script>

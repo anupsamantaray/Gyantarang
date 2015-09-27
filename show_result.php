@@ -1,6 +1,5 @@
 <?php
-include_once("../function.php");
-include_once("../function1.php");
+include_once("function.php");
 ob_start();
 if (!$_SESSION['name']){
 header("location:logout.php");
@@ -8,22 +7,20 @@ header("location:logout.php");
 else{
 	
 $sqlpropic="Select pro_pic from login where email='".$_SESSION['email']."'";
-$result_sqlpropic=$con->query($sqlpropic);
+$result_sqlpropic=mysql_query($sqlpropic);
 $pic;
-if($result_sqlpropic->num_rows>0)
-{
-	while($row_pic=$result_sqlpropic->fetch_assoc())
-	{
+if(mysql_num_rows($result_sqlpropic)>0){
+	while($row_pic=mysql_fetch_assoc($result_sqlpropic)){
 		$pic=$row_pic['pro_pic'];
 	}
 }
 $class=$_SESSION['class'];
 $sqlcl=mysql_query("select * from `student_class` where `id`='$class'");
 $rescl=mysql_fetch_array($sqlcl);
-$result_class=$con->query("select * from `student_class` where `id`='$class'");
-if($result_class->num_rows>0)
+$result_class=mysql_query("select * from `student_class` where `id`='$class'");
+if(mysql_num_rows($result_class)>0)
 {
-	while($rows_class=$result_class->fetch_assoc())
+	while($rows_class=mysql_fetch_assoc($result_class))
 	{
 		$classvalue=$rows_class["class"];	
 	}
@@ -71,7 +68,7 @@ $result_gettime=$con->query($sqlgettime);
 */
 //$sql_result="Select * from student_result where Publish='Yes' and Subject_class='".$class."' and Subject='".$subject1."' and Student_topic='".$topic."' order by Percent;";	
 $sql_result="Select * from student_result where Publish='Yes' and Subject_class='".$classvalue."' order by Percent desc" ;
-$result_sql_result=$con->query($sql_result);
+$result_sql_result=mysql_query($sql_result);
 
 ?>
 
@@ -136,7 +133,7 @@ $result_sql_result=$con->query($sql_result);
 <!--<div class='navbar navbar-inverse navbar-fixed-top' style="background-color:#0B3861;">-->
 <!--<form name='f1' method='post' action=''>-->
 
-   <?php include_once('header.php')?>
+   <?php include_once('header_after_login.php')?>
 
     
     <div id="container">
@@ -190,10 +187,10 @@ $result_sql_result=$con->query($sql_result);
                         <!-- <th style="padding:5px;background-color:#efefef;color:rgb(0, 112, 176);">Rank</th>-->
                     </tr>
                     <?php
-						if($result_sql_result->num_rows>0)
+						if(mysql_num_rows($result_sql_result)>0)
 						{	
 							$i=1;
-							while($rows_getresult=$result_sql_result->fetch_assoc())
+							while($rows_getresult=mysql_fetch_assoc($result_sql_result))
 							{
 								echo("<tr>");
 								
@@ -247,4 +244,3 @@ $result_sql_result=$con->query($sql_result);
    <?php include_once('footer.php');?>
 </body>
 </html><?php } ?>
-
