@@ -127,6 +127,8 @@ $(document).ready(function() {
 	/*$("li.act_quiz").hover(function () {
 		$(this).find(".sub_act_quiz").toggle();
 	});*/
+	var rhgt = $(".right_pert2").height();
+	$(".left_pert").height(rhgt+10);
 });
 </script>
 <div class="container">
@@ -147,19 +149,20 @@ $(document).ready(function() {
 						<li><a href="javascript:void(0);"><i></i>Your Text</a></li>
 						<li><a href="javascript:void(0);"><i></i>Your Text</a></li>
 						<li><a href="javascript:void(0);"><i></i>Your Text</a></li-->
-					</ul>
+					<!--/ul-->
 						<?php
 							$sqlsubject="Select * from  student_subject where class_id=".$class;
 							$result_subject=mysql_query($sqlsubject);
 							echo("<div class='navisationleft'><h3 class='subText'>Subjects</h3></div><br>");
 							if(mysql_num_rows($result_subject)>0){
 								while($rows_subject=mysql_fetch_assoc($result_subject)){
-									echo("<ul style='margin-left: 0px; padding: 1px 5px;'><li class='list active li_sub'><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a> </li>
-
-								</ul>");	
+									/*echo("<ul style='margin-left: 0px; padding: 1px 5px;'><li class='list active li_sub'><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a> </li>
+								</ul>");	*/
+									echo("<li class='list active li_sub'><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a> </li>");	
 								}
 							}
 						?>
+					</ul>
 				</div>
 			</div>
 			<div class="col-md-10 right_pert2">
