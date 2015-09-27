@@ -109,9 +109,9 @@
 		.right_pert2 ul li a{
 			padding:10px;
 			text-decoration: none;
-			display: block;
+			line-height: 38px;
 			color: #f68b1c;
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 300;
 			transition: all 0.4s ease;
 		}

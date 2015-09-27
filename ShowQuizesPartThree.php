@@ -49,10 +49,11 @@
 				font-size: 16px;
 				font-weight: 300;
 				transition: all 0.4s ease;
+				cursor: unset;
 			}
 			.navisationleft ul li a:hover{
 				color:#fff;
-				padding:10px 15px;
+				padding:10px;
 				background:#69A70B;
 				text-decoration: none;
 			}
@@ -503,8 +504,8 @@ function callsubmit1()
 				<div class="navisationleft">
 					<ul>
 						<li><a href="javascript:void(0);" class="active"><i></i> Class <?=$rescl['class']?></a></li>
-						<li><a href="javascript:void(0);" class="active"><i></i> Subject <?=$subject1?></a></li>
-						<li><a href="javascript:void(0);" class="active"><i></i> Topic <?=$topic?></a></li>
+						<li><a href="javascript:void(0);" style="background:#f6f6f6; color:#000;"><i></i> Subject <?=$subject1?></a></li>
+						<li><a href="javascript:void(0);" style="background:#f6f6f6; color:#000;"><i></i> Topic <?=$topic?></a></li>
 					</ul>
 						<?php
 							/*
