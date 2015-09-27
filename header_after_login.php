@@ -258,7 +258,8 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 								</ul>
 							</div-->
 						</li>
-						<li class="header act_memlogin"><a href="login.php">Member Login</a></li>
+						<!--li class="header act_memlogin"><a href="login.php">Member Login</a></li-->
+						<li class="header act_log"><a href="logout.php">Log out</a></li>
 					</ul>
 				</div>
 			</div>
