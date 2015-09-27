@@ -531,8 +531,8 @@ function callsubmit1()
 				  ");
 				  	$tid=$_GET['tid'];?>
                    <form name='f1' method='post' action='getresult.php'>
-                    <span style="font-size:18px;font-weight:bold;color:rgb(0, 112, 176);padding-left:18px;">Start With the Question Number &nbsp;: &nbsp;</span>
-                    <select name='cbouplimit' style="width:15%;height:30px;" id="cbouplimit" onclick="ldlimit()" onchange="ldlimit()"><option></option>
+                    <span style="padding-left:18px; font-size:18px; color:rgb(140, 140, 140);">Start With the Question Number</span>
+                    <select name='cbouplimit' style="width:15%;height:30px; margin-left:15px;" id="cbouplimit" onclick="ldlimit()" onchange="ldlimit()"><option></option>
                     	<?php
 							$sql_uplimit="Select * from student_question where topic_id = ".(int)$tid;
 							$result_uplimit=mysql_query($sql_uplimit);
@@ -571,12 +571,12 @@ function callsubmit1()
 						
 					}
 					</script>
-                    <span style="font-size:18px;font-weight:bold;color:rgb(0, 112, 176);padding-left:18px;">End&nbsp; With the Question Number &nbsp; : &nbsp;</span>
-                    <select name="cbollimit" style="width:15%;height:30px;" id="cbollimit">
+                    <span style="padding-left:18px; font-size:18px; color:rgb(140, 140, 140);">End&nbsp; With the Question Number</span>
+                    <select name="cbollimit" style="width:15%;height:30px; margin-left:15px;" id="cbollimit">
                     	
                     </select>                   
                     <?php
-					echo("<h1 id='level' style='color:#e05f03;'>&nbsp;&nbsp;Levels</h1><br>");
+					echo("<h1 id='level' style='color:#e05f03; margin-top:15px;'>&nbsp;&nbsp;Levels</h1><br>");
 					
 							echo("<div class='sub'><span><b><a href='#' name='btnlow' id='btnlow' value='0'  onclick='showtime()'><b>Low</b></a></b></span>&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnmid' value='1' id='btnmid' onclick='showtime2()'><b>Middle</b></a></b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnhigh' value='2' id='btnhigh' onclick='showtime3()'><b>High</b></a></b></span></div><div id='clockcontainer' style='position: fixed;left:70%;'><div id='countdown-1'></div></div>");	
 					

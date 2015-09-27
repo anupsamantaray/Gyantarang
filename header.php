@@ -93,7 +93,27 @@ div#wd {
 		text-decoration: none;
 		font-family: "open_sansregular";
 	}
-
+	.welcomeuser{
+		font-size:16px;
+		font-weight:300 !important;
+		color:#000;
+	}
+	.welcomeuser span{
+		font-size:18px;
+		font-weight:300 !important;
+		color:#69A70B;
+		padding-right:5px;
+	}
+	.welcomeuser a{
+		color:#ff0000; 
+		padding:0 0 0 5px;
+		font-weight:300 !important;
+		text-decoration:none;
+		font-size:16px;
+	}
+	.welcomeuser a:hover{
+		text-decoration:none;
+	}
 </style>
 
 <script src="js/dw_con_scroller.js" type="text/javascript"></script>
@@ -232,7 +252,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
 		<div class="row">  
-			<div class="col-md-10" style="padding:0 15px 0 0;"> 
+			<div class="col-md-9" style="padding:0 15px 0 0;"> 
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -242,7 +262,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 					</button>
 				</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbarCollapse" style="padding-left: 0px; ">
+				<div class="collapse navbar-collapse" id="navbarCollapse" style="padding:15px 0; ">
 					<ul class="nav navbar-nav ">
 						<li  class="header act_abt"><a href="index.php">About Us</a></li>
 						<li class="header act_work"><a href="ourworks.php" >Our Works</a></li>
@@ -262,10 +282,13 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-2" style="text-align:right; padding-right:0;"><!--col-sm-offset-2-->
+			<div class="col-md-3" style="text-align:right; padding-right:0;"><!--col-sm-offset-2-->
 			   <div id="sonarmenu">
 					  <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="#s"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
-				  </div>     
+				  </div>
+				<div class="welcome">
+					<p class="welcomeuser"><span>welcome</span> Arindam |<a href="#s"><i class="fa fa-power-off"></i>Logout</a></p>
+				</div>
 			</div>
 		</div>  
     </div>

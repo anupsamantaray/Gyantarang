@@ -25,7 +25,7 @@
 /*--------------------------Left_part------------------------------*/
 
 	.left_pert{
-		height: 100%;
+		height: 828px;
 		background:#f6f6f6 !important;
 		padding:0 0 30px 0 !important;
 		margin: 0;
@@ -67,11 +67,16 @@
 					vertical-align:inherit !important;
 					padding-top:2px;
 				}
+			.subText{
+				text-align:center;
+				font-size:20px;
+				font-weight:300;
+			}
 				
 /*-----------------rightpart--------------------*/
 	.right_pert2{
 		margin: 0;
-		height:100%;
+		height:inherit;
 		padding:20px 30px !important;
 		background:#fff !important;
 	}
@@ -146,7 +151,7 @@ $(document).ready(function() {
 						<?php
 							$sqlsubject="Select * from  student_subject where class_id=".$class;
 							$result_subject=mysql_query($sqlsubject);
-							echo("<div class='navisationleft'><h3>Subjects</h3></div><br>");
+							echo("<div class='navisationleft'><h3 class='subText'>Subjects</h3></div><br>");
 							if(mysql_num_rows($result_subject)>0){
 								while($rows_subject=mysql_fetch_assoc($result_subject)){
 									echo("<ul style='margin-left: 0px; padding: 1px 5px;'><li class='list active li_sub'><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a> </li>
