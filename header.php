@@ -30,6 +30,14 @@ $(document).ready(function(){
 	$(".morequizzs").click(function(){
 		$(".regpopup").fadeIn(600);
 	});
+	$("#sttureg").click(function(){
+		$(".rgg").trigger('click');
+		$(".regpopup").fadeIn(600);
+	});
+	$("#sttulog").click(function(){
+		$(".lgg").trigger('click');
+		$(".regpopup").fadeIn(600);
+	});
 	$(".popclose").click(function(){
 		$(".regpopup").fadeOut(600);
 	});
@@ -153,8 +161,8 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 	<div class="childreg">
 		<div class="tab-container tab-left tab-danger" id="partpoop">
 			<ul class="nav nav-tabs" style="margin:-1px 0 0 -1px; position:relative;">
-				<li class="active"><a href="#home2" data-toggle="tab">Login</a></li>
-				<li class=""><a href="#profile2" data-toggle="tab">Registration</a></li>
+				<li class="active"><a href="#home2" data-toggle="tab" class="lgg">Login</a></li>
+				<li class=""><a href="#profile2" data-toggle="tab" class="rgg">Registration</a></li>
 				<a href="javascript:void(0)" class="closse popclose"><img src="images/cross.png"></a>
 			</ul>
 			<div class="tab-content" style="padding: 20px 15px;">
@@ -284,10 +292,11 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 			</div>
 			<div class="col-md-3" style="text-align:right; padding-right:0;"><!--col-sm-offset-2-->
 			   <div id="sonarmenu">
-					  <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="#s"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
+					  <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="javascript:void(0);"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
 				  </div>
 				<div class="welcome">
-					<p class="welcomeuser"><span>welcome</span> Arindam |<a href="#s"><i class="fa fa-power-off"></i>Logout</a></p>
+					<p class="welcomeuser" style="display:none;"><span>Welcome</span> Arindam |<a href="logout.php"><i class="fa fa-power-off"></i>Logout</a></p>
+					<p class="welcomeuser"><a href="javascript:void(0);" id="sttureg"><i class="fa fa-power-off"></i>Registration</a> |<a href="javascript:void(0);" id="sttulog"><i class="fa fa-power-off"></i>Login</a></p>
 				</div>
 			</div>
 		</div>  

@@ -1,10 +1,10 @@
 <?php 
 	include_once("function.php");
-	include 'header_after_login.php';
 	ob_start();
-	if(!$_SESSION['name']){
-	header("location:logout.php");
+	if(!isset($_SESSION['name'])){
+		header("location:logout.php");
 	}else{
+		include 'header_after_login.php';
 		$class=$_SESSION['class'];
 		$sqlcl=mysql_query("select * from `student_class` where `id`='$class'");
 		$rescl=mysql_fetch_array($sqlcl);

@@ -9,24 +9,20 @@ include 'connection.php';
 ?>
 <script src="js/bookmarkscroll.js"></script>
 <script type="text/javascript"></script>
-<?php
-	/*if(isset($_SESSION['name'])){*/
-	if(isset($_REQUEST['err'])){
-		echo "<script>alert('".$_REQUEST['err']."');</script>";
-	}
-?>
 <style>
-.act_abt {
-	
+.act_abt{
 	background-color: #69a70b;
 	border-radius:10px;
-	
 }
 .navbar-default .navbar-nav>.act_abt>a{
 	color:#fff;
 }
-
 </style>
+<script>
+	$(document).ready(function(){
+		$('#usernmm').html('<?php echo $_SESSION["name"];?>');
+	});
+</script>
 <div class="container" id="mcol">
 	<br />
     
@@ -150,12 +146,9 @@ include 'connection.php';
                 <a href="ourworks.php?scrollto=<?php  echo $row["Dname"] ?>"><p><?php  echo $row["Dname"] ?></p></a>
                    </div>
                </div></marquee>
-			    <?php    } } ?>
-               
-                
+			    <?php
+				} } ?>
          </div>
-            
-                
                 </div>  
                  </div> 
                  </div>
@@ -165,3 +158,9 @@ include 'connection.php';
   </div>   
   </div> 
 <?php include 'footer.php';?>
+<?php
+	/*if(isset($_SESSION['name'])){*/
+	if(isset($_REQUEST['err'])){
+		echo "<script>alert('".$_REQUEST['err']."');</script>";
+	}
+?>

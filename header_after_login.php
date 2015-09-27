@@ -95,7 +95,30 @@ div#wd {
 		text-decoration: none;
 		font-family: "open_sansregular";
 	}
-
+	.welcomeuser{
+		font-size:13px;
+		font-weight:300 !important;
+		color:#000;
+	}
+	.welcomeuser span{
+		font-size:14px;
+		font-weight:300 !important;
+		color:#69A70B;
+		padding-right:5px;
+	}
+	.welcomeuser a{
+		color:#ff0000; 
+		padding:0 0 0 5px;
+		font-weight:300 !important;
+		text-decoration:none;
+		font-size:16px;
+	}
+	.welcomeuser a:hover{
+		text-decoration:none;
+	}
+	.namspn{
+		color:#000 !important;
+	}
 </style>
 
 <script src="js/dw_con_scroller.js" type="text/javascript"></script>
@@ -268,7 +291,10 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 			<div class="col-md-2" style="text-align:right; padding-right:0;"><!--col-sm-offset-2-->
 			   <div id="sonarmenu">
 					  <span><a href="#s"><img src="images/facebook.png" /></a></span> <span><a href="#s"><img src="images/twitter.png"  /></a></span> <span><a href="#s"><img src="images/google-plus.png" /></a></span>
-				  </div>     
+				</div>
+				<div class="welcome">
+					<p class="welcomeuser"><span>Welcome</span> <span id="usernmm" class="namspn"></span><!-- |<a href="logout.php"><i class="fa fa-power-off"></i>Logout</a>--></p>
+				</div>
 			</div>
 		</div>  
     </div>

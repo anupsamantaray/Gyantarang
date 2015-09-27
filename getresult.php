@@ -58,7 +58,7 @@ function popup()
 </head>
 <body onLoad="popup()">
 <!--<form name='f1' method='post' action=''>-->
-   <?php include_once('header2.php');
+   <?php include_once('header_after_login.php');
    	$starttime = $_POST["txtstarttime"];
 	$substart_time=explode(":",$starttime);
 	$strhr = (int)($substart_time[0]);
@@ -196,7 +196,7 @@ for($i=0;$i<$j;$i++)
 		{
 			if($_POST['radio'.$i]==$correct[$i])
 			{
-				echo($arranswer2[$i][1]."&nbsp;&nbsp;&nbsp;<img src='../correct.jpg'><br>");
+				echo($arranswer2[$i][1]."&nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'><br>");
 			}
 			else
 			{
@@ -215,7 +215,7 @@ for($i=0;$i<$j;$i++)
 			{
 				if($_POST['radio'.$i]==$arranswer2[$i][1])
 				{
-					echo($arranswer2[$i][1]."&nbsp;&nbsp;&nbsp;<img src='../wrong.jpg'><br>");
+					echo($arranswer2[$i][1]."&nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'><br>");
 				}
 				else
 				{
@@ -237,7 +237,7 @@ for($i=0;$i<$j;$i++)
 		{
 			if($_POST['radio'.$i]==$correct[$i])
 			{
-				echo($arranswer2[$i][2]."&nbsp;&nbsp;&nbsp;<img src='../correct.jpg'><br>");
+				echo($arranswer2[$i][2]."&nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'><br>");
 			}
 			else
 			{
@@ -259,7 +259,7 @@ for($i=0;$i<$j;$i++)
 			{
 				if($_POST['radio'.$i]==$arranswer2[$i][2])
 				{
-					echo($arranswer2[$i][2]."&nbsp;&nbsp;&nbsp;<img src='../wrong.jpg'><br>");
+					echo($arranswer2[$i][2]."&nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'><br>");
 				}
 				else
 				{
@@ -280,7 +280,7 @@ for($i=0;$i<$j;$i++)
 		{
 			if($_POST['radio'.$i]==$correct[$i])
 			{
-				echo($arranswer2[$i][3]."&nbsp;&nbsp;&nbsp;<img src='../correct.jpg'><br>");
+				echo($arranswer2[$i][3]."&nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'><br>");
 			}
 			else
 			{
@@ -301,7 +301,7 @@ for($i=0;$i<$j;$i++)
 			{
 				if($_POST['radio'.$i]==$arranswer2[$i][3])
 				{
-					echo($arranswer2[$i][3]."&nbsp;&nbsp;&nbsp;<img src='../wrong.jpg'><br>");
+					echo($arranswer2[$i][3]."&nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'><br>");
 				}
 				else
 				{
@@ -323,7 +323,7 @@ for($i=0;$i<$j;$i++)
 		{
 			if($_POST['radio'.$i]==$correct[$i])
 			{
-				echo($arranswer2[$i][4]."&nbsp;&nbsp;&nbsp;<img src='../correct.jpg'><br>");
+				echo($arranswer2[$i][4]."&nbsp;&nbsp;&nbsp;<img src='images/correct.jpg'><br>");
 			}
 			else
 			{
@@ -344,7 +344,7 @@ for($i=0;$i<$j;$i++)
 			{
 				if($_POST['radio'.$i]==$arranswer2[$i][4])
 				{
-					echo($arranswer2[$i][4]."&nbsp;&nbsp;&nbsp;<img src='../wrong.jpg'><br>");
+					echo($arranswer2[$i][4]."&nbsp;&nbsp;&nbsp;<img src='images/wrong.jpg'><br>");
 				}
 				else
 				{
