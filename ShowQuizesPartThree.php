@@ -116,9 +116,7 @@
 			padding:10px 15px;
 			text-decoration: none;
 		}
-	
 </style>
-
 <?php 
 $time1=0;
 $time2=0;
@@ -126,10 +124,8 @@ $time3=0;
 $tid=$_GET['tid'];
 $sqlgettopic="Select * from  student_topic where id=".$tid;
 $resultgettopic=mysql_query($sqlgettopic);
-if(mysql_num_rows($resultgettopic)>0)
-{
-	while($rows_gettopic=mysql_fetch_assoc($resultgettopic))
-	{
+if(mysql_num_rows($resultgettopic)>0){
+	while($rows_gettopic=mysql_fetch_assoc($resultgettopic)){
 		$topic=$rows_gettopic['topic'];
 		$subject_id=$rows_gettopic['subject_id'];
 	}
@@ -206,7 +202,7 @@ echo("<script>function showtime()
 	 
 	$('#countdown-1').timeTo(".$time1.", function()
 	{
-		var time=".$time1."
+		var time=".$time1.";
 		if(time==1)
 		{
 			callsubmit1();
@@ -223,7 +219,7 @@ echo("<script>function showtime()
 	 */
 	$('#countdown-2').timeTo(
 	{
-		timeTo: new Date('Jul 10 2014 00:00:00')
+		timeTo: new Date('Jul 10 2014 00:00:00'),
 	});
 	
 	/**
@@ -260,15 +256,15 @@ echo("<script>function showtime()
 	}
 	else
 	{
-		alert('Please select The Question to start and the Question to End')
+		alert('Please select The Question to start and the Question to End');
 	}
 }</script>");
 
 
 echo("<script>function showtime2()
 {
-	var low1=document.getElementById('cbouplimit').value 
-	var up1=document.getElementById('cbollimit').value
+	var low1 = document.getElementById('cbouplimit').value;
+	var up1 = document.getElementById('cbollimit').value;
 	if(low1!='' && up1!='')
 	{
 	document.getElementById('btnlow').style.display='none'; 
@@ -276,7 +272,7 @@ echo("<script>function showtime2()
 	document.getElementById('btnhigh').style.display='none'; 
 	document.getElementById('level').align='left';
 	document.getElementById('level').innerHTML='Quiz Started...';
-	document.getElementById('txtstarttime').value=".$time2." 
+	document.getElementById('txtstarttime').value=".$time2." ;
 	if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -289,7 +285,7 @@ echo("<script>function showtime2()
                 document.getElementById('showquestions').innerHTML = xmlhttp.responseText;
             }
         }
-        xmlhttp.open('GET','getquestion2.php?q=+".$tid."&d=1&l1='+low1+'&up1='+up1',true);
+        xmlhttp.open('GET','getquestion2.php?q=+".$tid."&d=1&l1='+low1+'&up1='+up1,true);
         xmlhttp.send();
 	/***
 		set timer countdown in seconds with callback
@@ -300,7 +296,7 @@ echo("<script>function showtime2()
 	
 	$('#countdown-1').timeTo(".$time2.", function()
 	{
-		var time=".$time2."
+		var time=".$time2.";
 		if(time==1)
 		{
 			callsubmit1();
@@ -318,7 +314,7 @@ echo("<script>function showtime2()
 	 */
 	$('#countdown-2').timeTo(
 	{
-		timeTo: new Date('Jul 10 2014 00:00:00')
+		timeTo: new Date('Jul 10 2014 00:00:00'),
 	});
 	
 	/**
@@ -355,15 +351,15 @@ echo("<script>function showtime2()
 	}
 	else
 	{
-		alert('Please select The Question to start and the Question to End')
+		alert('Please select The Question to start and the Question to End');
 	}
 }</script>");
 
 
 echo("<script>function showtime3()
 {
-	var low1=document.getElementById('cbouplimit').value 
-	var up1=document.getElementById('cbollimit').value
+	var low1=document.getElementById('cbouplimit').value;
+	var up1=document.getElementById('cbollimit').value;
 	if(low1!='' && up1!='')
 	{
 		document.getElementById('btnlow').style.display='none'; 
@@ -384,7 +380,7 @@ echo("<script>function showtime3()
                 document.getElementById('showquestions').innerHTML = xmlhttp.responseText;
             }
         }
-        xmlhttp.open('GET','getquestion2.php?q=+".$tid."&d=2&l1='+low1+'&up1='+up1',true);
+        xmlhttp.open('GET','getquestion2.php?q=+".$tid."&d=2&l1='+low1+'&up1='+up1,true);
         xmlhttp.send();
 	/***
 		set timer countdown in seconds with callback
@@ -395,7 +391,7 @@ echo("<script>function showtime3()
 	
 	$('#countdown-1').timeTo(".$time3.", function()
 	{
-		var time=".$time3."
+		var time=".$time3.";
 		if(time==1)
 		{
 			callsubmit1();
@@ -413,7 +409,7 @@ echo("<script>function showtime3()
 	 */
 	$('#countdown-2').timeTo(
 	{
-		timeTo: new Date('Jul 10 2014 00:00:00')
+		timeTo: new Date('Jul 10 2014 00:00:00'),
 	});
 	
 	/**
@@ -450,19 +446,23 @@ echo("<script>function showtime3()
 	}
 	else
 	{
-		alert('Please select The Question to start and the Question to End')
+		alert('Please select The Question to start and the Question to End');
 	}
-}</script>");
+}
 
+</script>");
 
 ?>
 <script>
+$(document).ready(function() {
+	var rhgt = $(".right_pert2").height();
+	$(".left_pert").height(rhgt+10);
+});
 function blankfun()
 {
 
 }
-function callsubmit1()
-{
+function callsubmit1(){
 	var e11=document.getElementById("countdown-1").firstChild.firstChild.firstChild.innerHTML;
 	e11=parseInt(e11);
 	
@@ -522,16 +522,17 @@ function callsubmit1()
 						*/?>
 				</div>
 			</div>
-			<div class="col-md-10 right_pert2">
+            <form name='f1' method='post' id="rgtfrm" action='getresult.php'>
+			<div class="col-md-10 right_pert2" style="height:inherit;">
 				<p>Welcome <span> <?php if($_SESSION['name']){echo $_SESSION['name'];} ?></span></p>
 				<!--h1>Subjects</h1-->
 				<ul>
 					<?php
 				  echo("<script>
+						
 				  </script>
 				  ");
 				  	$tid=$_GET['tid'];?>
-                   <form name='f1' method='post' action='getresult.php'>
                     <span style="padding-left:18px; font-size:18px; color:rgb(140, 140, 140);">Start With the Question Number</span>
                     <select name='cbouplimit' style="width:15%;height:30px; margin-left:15px;" id="cbouplimit" onclick="ldlimit()" onchange="ldlimit()"><option></option>
                     	<?php
@@ -552,24 +553,19 @@ function callsubmit1()
                    <!-- <span style="padding-left:150px;padding-right:0px;"><a href="show_result.php?tid=<?php echo $tid; ?>" style="color:#06F;font-size:14px;">Click here to Display result</a></span>-->
                     <br/><input style="display:none;" type='text' name='txtuplimit' id="txtuplimit" value="<?php echo($iup); ?>" /><br />
                     <script>
-					function ldlimit()
-					{
+					function ldlimit(){
 						document.getElementById("cbollimit").options.length = 0;
 						var up=document.getElementById("txtuplimit").value;
 						var low=document.getElementById("cbouplimit").value;
-						//var i=0;
 						up=parseInt(up);
 						low=parseInt(low);
 						var x = document.getElementById("cbollimit");
-						for(i=low;i<=up;i++)
-						{
+						for(i=low;i<=up;i++){
 							var option = document.createElement("option");
-						    option.text = i;
+							option.text = i;
 							option.value=i;
-					    	x.add(option);
+							x.add(option);
 						}
-						//alert("Hello");
-						
 					}
 					</script>
                     <span style="padding-left:18px; font-size:18px; color:rgb(140, 140, 140);">End&nbsp; With the Question Number</span>
@@ -579,8 +575,7 @@ function callsubmit1()
                     <?php
 					echo("<h1 id='level' style='color:#e05f03; margin-top:15px;'>&nbsp;&nbsp;Levels</h1><br>");
 					
-							echo("<div class='sub'><span><b><a href='#' name='btnlow' id='btnlow' value='0'  onclick='showtime()'><b>Low</b></a></b></span>&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnmid' value='1' id='btnmid' onclick='showtime2()'><b>Middle</b></a></b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnhigh' value='2' id='btnhigh' onclick='showtime3()'><b>High</b></a></b></span></div><div id='clockcontainer' style='position: fixed;left:70%;'><div id='countdown-1'></div></div>");	
-					
+							echo("<div class='sub'><span><b><a href='#' name='btnlow' id='btnlow' value='0'  onclick='showtime()'><b>Low</b></a></b></span>&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnmid' value='1' id='btnmid' onclick='showtime2()'><b>Middle</b></a></b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnhigh' value='2' id='btnhigh' onclick='showtime3()'><b>High</b></a></b></span></div><div id='clockcontainer' style='position:fixed; left:70%;'><div id='countdown-1'></div></div>");
                   ?>
                   <!--<form name='f1' method='post' action='getresult.php'>-->
                    <input type="text" name="txtname" id="txtname" value="<?php if($_SESSION['name']){echo $_SESSION['name'];} ?>" style="display:none;"/>
@@ -590,10 +585,8 @@ function callsubmit1()
                   <input type="text" name="txtendtime" id="txtendtime" style="display:none;"/>
                   <input type="text" name="txtstarttime" id="txtstarttime" style="display:none;" /> 
                   <div id='showquestions' height="100%" >
-                  
-                        </div><!--/form-->
+                  </div><!--/form-->
 				</ul>
-			
 			<div class="clr"></div>
 			</div>
 			</form>
