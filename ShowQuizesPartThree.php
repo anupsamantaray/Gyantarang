@@ -72,7 +72,7 @@
 /*-----------------rightpart--------------------*/
 	.right_pert2{
 		margin: 0;
-		height:100%;
+		height:auto;
 		padding:20px 30px !important;
 		background:#fff !important;
 	}
@@ -116,6 +116,13 @@
 			padding:10px 15px;
 			text-decoration: none;
 		}
+h2 {
+    margin: 0px;
+    color: #666;
+    padding:0px 0 15px 0;
+    font-size:18px;
+	font-weight: 300;
+}
 	
 </style>
 
