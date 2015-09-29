@@ -134,7 +134,12 @@ function popup()
 		}
 	}	
 	echo("<center><h1>Your Score is : ".$cnt." out of ".$_POST['count']."</h1></center>");
-	$percent=($cnt/(float)$_POST['count'])*100;
+	if($_POST['count']>0){
+		$percent=($cnt/(float)$_POST['count'])*100;
+	}else{
+		$percent=0;
+	}
+	
 	//header("location:ShowQuizes2.php?c=".$cnt);
 ?>
 				 
