@@ -238,7 +238,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 								</tr>
 								<tr>
 									<td>Upload Photo</td>
-									<td><input name="fileToUpload" class="form-control picuplode" id="usrphoto" validation="blank|Provide your photo." type="file"></td>
+									<td><input name="fileToUpload" class="form-control picuplode" id="usrphoto" validation="blank|Provide your photo." type="file" style="padding:0;"></td>
 								</tr>
 								<tr>
 									<td></td>
@@ -296,7 +296,7 @@ if ( DYN_WEB.Scroll_Div.isSupported() ) {
 				  </div>
 				<div class="welcome">
 					<p class="welcomeuser" style="display:none;"><span>Welcome</span> Arindam |<a href="logout.php"><i class="fa fa-power-off"></i>Logout</a></p>
-					<p class="welcomeuser"><a href="javascript:void(0);" id="sttureg"><i class="fa fa-power-off"></i>Registration</a> |<a href="javascript:void(0);" id="sttulog"><i class="fa fa-power-off"></i>Login</a></p>
+					<p class="welcomeuser"><a href="javascript:void(0);" id="sttureg" style="color:#000; padding-right:4px;">Registration</a> |<a href="javascript:void(0);" id="sttulog" style="color:#000; margin-left:4px;">Login</a></p>
 				</div>
 			</div>
 		</div>  
