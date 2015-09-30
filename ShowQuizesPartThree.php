@@ -9,6 +9,11 @@
 		$sqlcl=mysql_query("select * from `student_class` where `id`='$class'");
 		$rescl=mysql_fetch_array($sqlcl);
 ?>
+<script>
+	$(document).ready(function(){
+		$('#usernmm').html('<?php echo $_SESSION["name"];?>');
+	});
+</script>
 <style type="text/css">
 .act_quiz {
 	background: #69a70b;
@@ -531,7 +536,7 @@ function callsubmit1(){
 			</div>
             <form name='f1' method='post' id="rgtfrm" action='getresult.php'>
 			<div class="col-md-10 right_pert2" style="height:inherit;">
-				<p>Welcome <span> <?php if($_SESSION['name']){echo $_SESSION['name'];} ?></span></p>
+				<!--p>Welcome <span> <?php /*if($_SESSION['name']){echo $_SESSION['name'];}*/ ?></span></p-->
 				<!--h1>Subjects</h1-->
 				<ul>
 					<?php

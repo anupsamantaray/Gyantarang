@@ -1,7 +1,6 @@
 <?php 
 	include_once("function.php");
 	include 'header_after_login.php';
-	
 	ob_start();
 	if(!$_SESSION['name']){
 	header("location:logout.php");
@@ -10,6 +9,11 @@
 		$sqlcl=mysql_query("select * from `student_class` where `id`='$class'");
 		$rescl=mysql_fetch_array($sqlcl);
 ?>
+<script>
+	$(document).ready(function(){
+		$('#usernmm').html('<?php echo $_SESSION["name"];?>');
+	});
+</script>
 <style type="text/css">
 .act_quiz {
 	background: #69a70b;
@@ -147,7 +151,7 @@ $(document).ready(function() {
 				</div>
 			</div>
 			<div class="col-md-10 right_pert2">
-				<p>Welcome <span> <?php if($_SESSION['name']){echo $_SESSION['name'];} ?></span></p>
+				<!--p>Welcome <span> <?php /*if($_SESSION['name']){echo $_SESSION['name'];}*/ ?></span></p-->
 				<h1>Subjects</h1>
 				<ul>
 					<?php

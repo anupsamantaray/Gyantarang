@@ -25,6 +25,11 @@ $email=$res['email'];
 <meta name="robots" content="all" />
 <title>quiz</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#usernmm').html('<?php echo $_SESSION["name"];?>');
+	});
+</script>
 <link href="style.css" type="text/css" rel="stylesheet" />
 <style>
 	table{

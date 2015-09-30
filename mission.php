@@ -1,4 +1,17 @@
-<?php include 'header.php';?>
+<?php
+session_start();
+include 'connection.php';
+if(isset($_SESSION['name'])){
+	include 'header_after_login.php';
+}else{
+	include 'header.php';
+}
+?>
+<script>
+	$(document).ready(function(){
+		$('#usernmm').html('<?php echo $_SESSION["name"];?>');
+	});
+</script>
 <style>
 .act_miss {
 	background: #69a70b;

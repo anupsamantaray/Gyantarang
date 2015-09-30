@@ -1,4 +1,4 @@
-<?php 
+<?php
 //for local host
 $servername ="localhost";
 $username 	="root";

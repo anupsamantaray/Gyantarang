@@ -1,11 +1,11 @@
 <?php
 session_start();
+include 'connection.php';
 if(isset($_SESSION['name'])){
 	include 'header_after_login.php';
 }else{
 	include 'header.php';
 }
-include 'connection.php';
 ?>
 <script src="js/bookmarkscroll.js"></script>
 <script type="text/javascript"></script>

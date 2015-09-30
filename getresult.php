@@ -25,6 +25,11 @@ $irand=rand(1,10000000);
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.timeTo.js"></script>
 <script>
+	$(document).ready(function(){
+		$('#usernmm').html('<?php echo $_SESSION["name"];?>');
+	});
+</script>
+<script>
 function popup()
 {
 	document.getElementById("clickid").click();
@@ -35,6 +40,7 @@ function popup()
  <!-- <script type="text/javascript" src="js/scripts.js"></script>-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="style.css" type="text/css" rel="stylesheet" media="screen" />
+
 <style>
 /*a:link {
     color:blue;
@@ -54,7 +60,128 @@ function popup()
 /*a:active {
     color: blue;
 }*/
+
+.act_quiz {
+	background: #69a70b;
+	border-radius:10px;
+}
+.navbar-default .navbar-nav>.act_quiz>a{
+	color:#fff;
+}
+
+.col-md-12{
+	padding-left:0px;
+	padding-right:0px;
+}
+/*--------------------------Left_part------------------------------*/
+
+	.left_pert{
+		height: 828px;
+		background:#f6f6f6 !important;
+		padding:0 0 30px 0 !important;
+		margin: 0;
+		/*border-right: 1px solid #69A70B;*/
+	}
+	.navisationleft{
+			padding:0;
+		}
+			.navisationleft ul{
+				padding:0 !important;
+			}
+			.navisationleft ul li{
+				display:block;
+				border-bottom:1px solid #69A70B;
+			}
+			.navisationleft ul li a{
+				padding:10px;
+				text-decoration: none;
+				display: block;
+				color: #000;
+				font-size: 16px;
+				font-weight: 300;
+				transition: all 0.4s ease;
+			}
+			.navisationleft ul li a:hover{
+				color:#fff;
+				padding:10px 15px;
+				background:#69A70B;
+				text-decoration: none;
+			}
+			.navisationleft ul li a.active{
+				color:#fff;
+				background:#69A70B;
+				padding:10px 15px;
+				text-decoration: none;
+			}
+				.smIcon{
+					margin:0 7px 0 0 !important;
+					vertical-align:inherit !important;
+					padding-top:2px;
+				}
+			.subText{
+				text-align:center;
+				font-size:20px;
+				font-weight:300;
+			}
+				
+/*-----------------rightpart--------------------*/
+	.right_pert2{
+		margin: 0;
+		height:inherit;
+		padding:20px 30px !important;
+		background:#fff !important;
+	}
+		.right_pert2 h1{
+			font-size:24px !important;
+			padding:0 0 30px 0;
+			font-weight:300 !important;
+			color:#000 !important;
+			margin:0;
+		}
+		.right_pert2 p{
+			font-size: 24px !important;
+			padding: 5px 0px 20px 0;
+			font-weight: 300 !important;
+			color: #69A70B;
+			margin: 0px;
+			text-align: center;
+		}
+		.right_pert2 p span{
+			font-size:18px !important;
+			color:#000;
+		}
+	.right_pert2 ul{
+		padding:0 !important;
+	}
+		.right_pert2 ul li{
+			display:block;
+			margin:0;
+		}
+		.right_pert2 ul li a{
+			padding:10px;
+			text-decoration: none;
+			line-height: 38px;
+			color: #f68b1c;
+			font-size: 18px;
+			font-weight: 300;
+			transition: all 0.4s ease;
+		}
+		.right_pert2 ul li a:hover{
+			color:#000;
+			padding:10px 15px;
+			text-decoration: none;
+		}
+	
 </style>
+<script type="text/javascript">
+$(document).ready(function() {
+	/*$("li.act_quiz").hover(function () {
+		$(this).find(".sub_act_quiz").toggle();
+	});*/
+	var rhgt = $(".right_pert2").height();
+	$(".left_pert").height(rhgt+10);
+});
+</script>
 </head>
 <body onLoad="popup()">
 <!--<form name='f1' method='post' action=''>-->
@@ -94,30 +221,31 @@ function popup()
     <div id="container">
         <div id="container_content">
             <div id="page">
-                <div id="container_left">
-                    <div class="heading">
+                <div id="container_left" class="left_pert">
+                    <!--div class="heading">
                         <h3>All Class</h3>
-                        
-                    </div>
+                    </div-->
+					<div class="navisationleft">
                     <ul style="margin-left: 0px; padding: 5px;">
                         <li class="list active">
-                           <img src="images/arrow.png" style="float: left; margin-right: 5px;" />Class <u><?php echo $rescl['class'];?></u>
+                           <!--img src="images/arrow.png" style="float: left; margin-right: 5px;" /-->Class <u><?php echo $rescl['class'];?></u>
                         </li>
                         <li class="list active">
-                           <img src="images/arrow.png" style="float: left; margin-right: 5px;" /> Subject <u><?php echo $_POST['txtsubject'];?></u>
+                           <!--img src="images/arrow.png" style="float: left; margin-right: 5px;" /--> Subject <u><?php echo $_POST['txtsubject'];?></u>
                         </li>
                         <li class="list active">
-                           <img src="images/arrow.png" style="float: left; margin-right: 5px;" /> Topic <u><?php echo $_POST['txttopic'];?></u>
+                           <!--img src="images/arrow.png" style="float: left; margin-right: 5px;" /--> Topic <u><?php echo $_POST['txttopic'];?></u>
                         </li>
                         <li class="list active">
-                           <img src="images/arrow.png" style="float: left; margin-right: 5px;" /> <a href="publish.php?m=<?php echo $irand; ?>" style="color:rgb(0,112,176);" > Publish Result</a>
+                           <!--img src="images/arrow.png" style="float: left; margin-right: 5px;" /--> <a href="publish.php?m=<?php echo $irand; ?>" style="color:rgb(0,112,176);" > Publish Result</a>
                         </li>
                     </ul>
+					</div>
                 </div>
-                <div id="container_right">
-                  <div class="welcome" id="welcome">
-              			Welcome <?php if($_SESSION['name']){echo $_SESSION['name'];} ?>
-                </div>
+                <div id="container_right" class="col-md-10 right_pert2">
+                  <!--div class="welcome" id="welcome">
+              			Welcome <?php /*if($_SESSION['name']){echo $_SESSION['name'];}*/ ?>
+                </div-->
                 <div>
                 <?php                       
  

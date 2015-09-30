@@ -10,7 +10,8 @@ if(isset($_POST['Login'])){
 		if($reslt>0){
 			$err = 'You have successfully logged in.';
 			$res = mysql_fetch_assoc($fetch);
-			$_SESSION['name']=$res['name'];
+			$fnameusr = explode(' ',$res['name']);
+			$_SESSION['name']=$fnameusr[0];
 			$_SESSION['email']=$res['email'];
 			$_SESSION['slno']=$res['slno'];
 			$_SESSION['class']=$res['class'];
