@@ -164,18 +164,17 @@ if(mysql_num_rows($result_gettime)>0)
 		}
 		
 	}
-	if($time1==NULL)
-		{$time1=1;
-		}
-		if($time2==NULL)
-		{$time2=1;
-		}
-		if($time3==NULL)
-		{$time3=1;
-		}
+	if($time1==NULL){
+		$time1=1;
+	}
+	if($time2==NULL){
+		$time2=1;
+	}
+	if($time3==NULL){
+		$time3=1;
+	}
 	
-echo("<script>function showtime()
-{
+echo ("<script>function showtime(){
 	var low1=document.getElementById('cbouplimit').value 
 	var up1=document.getElementById('cbollimit').value
 	if(low1!='' && up1!='')
@@ -185,10 +184,8 @@ echo("<script>function showtime()
 	document.getElementById('btnhigh').style.display='none'; 
 	document.getElementById('level').align='left';
 	document.getElementById('level').innerHTML='Quiz Started...';
-	document.getElementById('txtstarttime').value=".$time1." 
-	/*document.getElementByName('btnmid').innerHTML='none';
-	document.getElementByName('btnhigh').style.display='none';
-		document.getElementById('level').innerHTML='Quiz Started...'; */
+	/*document.getElementById('txtstarttime').value=".$time1.";*/
+		
 		if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -205,17 +202,15 @@ echo("<script>function showtime()
         xmlhttp.send();
 		//alert('hello');
 		
-	/***
-		set timer countdown in seconds with callback
-		where 10 define the second left in count.
-		after 10 second it will show alert.
-		wait for 10 second to see it.
-	*/
+		//set timer countdown in seconds with callback
+		//where 10 define the second left in count.
+		//after 10 second it will show alert.
+		//wait for 10 second to see it.
 	 
 	$('#countdown-1').timeTo(".$time1.", function()
 	{
 		var time=".$time1.";
-		if(time==1)
+		/*if(time==1)
 		{
 			callsubmit1();
 		}
@@ -223,46 +218,22 @@ echo("<script>function showtime()
 		{
 			alert('Countdown finished');
 			callsubmit1();
-		}
+		}*/
 	});
 
-	/**
-	 * Set timer countdown to specyfied date
-	 */
+	 //Set timer countdown to specified date
 	$('#countdown-2').timeTo(
 	{
 		timeTo: new Date('Jul 10 2014 00:00:00'),
 	});
 	
-	/**
-	 * Set theme and captions
-	 */
+
 	$('#countdown-3').timeTo(
 	{
-		/*
-			timeTo: date object specify date and time for current time 
-			or for countdown to,
-			default null.
-		*/
 		timeTo: new Date('Jul 27 2014 12:00:00'),
-		/*
-			theme: string name of color theme,
-			available 'white' and 'black',
-			default 'white';
-		*/
 		theme: 'black',
-		/*
-			displayCaption: boolean if true then captions display, default false;
-		*/
 		displayCaptions: true,
-		/*
-			fontSize: integer font-size by pixels for digits, default 28;
-		*/
 		fontSize: 48,
-		/*
-			captionSize: integer font-size by pixels for captions,
-			if 0 then calculate automaticaly, default 0;
-		*/
 		captionSize: 14
 	});
 	}
@@ -284,7 +255,7 @@ echo("<script>function showtime2()
 	document.getElementById('btnhigh').style.display='none'; 
 	document.getElementById('level').align='left';
 	document.getElementById('level').innerHTML='Quiz Started...';
-	document.getElementById('txtstarttime').value=".$time2." ;
+	/*document.getElementById('txtstarttime').value=".$time2." ;*/
 	if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -299,17 +270,12 @@ echo("<script>function showtime2()
         }
         xmlhttp.open('GET','getquestion2.php?q=+".$tid."&d=1&l1='+low1+'&up1='+up1,true);
         xmlhttp.send();
-	/***
-		set timer countdown in seconds with callback
-		where 10 define the second left in count.
-		after 10 second it will show alert.
-		wait for 10 second to see it.
-	*/
+
 	
 	$('#countdown-1').timeTo(".$time2.", function()
 	{
 		var time=".$time2.";
-		if(time==1)
+		/*if(time==1)
 		{
 			callsubmit1();
 		}
@@ -317,47 +283,27 @@ echo("<script>function showtime2()
 		{
 			alert('Countdown finished');
 			callsubmit1();
-		}
+		}*/
 		
 	});
 
-	/**
-	 * Set timer countdown to specyfied date
-	 */
+
 	$('#countdown-2').timeTo(
 	{
 		timeTo: new Date('Jul 10 2014 00:00:00'),
 	});
 	
-	/**
-	 * Set theme and captions
-	 */
+
 	$('#countdown-3').timeTo(
 	{
-		/*
-			timeTo: date object specify date and time for current time 
-			or for countdown to,
-			default null.
-		*/
+
 		timeTo: new Date('Jul 27 2014 12:00:00'),
-		/*
-			theme: string name of color theme,
-			available 'white' and 'black',
-			default 'white';
-		*/
+
 		theme: 'black',
-		/*
-			displayCaption: boolean if true then captions display, default false;
-		*/
+
 		displayCaptions: true,
-		/*
-			fontSize: integer font-size by pixels for digits, default 28;
-		*/
+
 		fontSize: 48,
-		/*
-			captionSize: integer font-size by pixels for captions,
-			if 0 then calculate automaticaly, default 0;
-		*/
 		captionSize: 14
 	});
 	}
@@ -372,15 +318,14 @@ echo("<script>function showtime3()
 {
 	var low1=document.getElementById('cbouplimit').value;
 	var up1=document.getElementById('cbollimit').value;
-	if(low1!='' && up1!='')
-	{
+	if(low1!='' && up1!=''){
 		document.getElementById('btnlow').style.display='none'; 
-	document.getElementById('btnmid').style.display='none'; 
-	document.getElementById('btnhigh').style.display='none'; 
-	document.getElementById('level').align='left';
-	document.getElementById('level').innerHTML='Quiz Started...';
-	document.getElementById('txtstarttime').value=".$time3." 
-	if (window.XMLHttpRequest) {
+		document.getElementById('btnmid').style.display='none'; 
+		document.getElementById('btnhigh').style.display='none'; 
+		document.getElementById('level').align='left';
+		document.getElementById('level').innerHTML='Quiz Started...';
+		/*document.getElementById('txtstarttime').value=".$time3.";*/
+		if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
         } else {
@@ -394,17 +339,11 @@ echo("<script>function showtime3()
         }
         xmlhttp.open('GET','getquestion2.php?q=+".$tid."&d=2&l1='+low1+'&up1='+up1,true);
         xmlhttp.send();
-	/***
-		set timer countdown in seconds with callback
-		where 10 define the second left in count.
-		after 10 second it will show alert.
-		wait for 10 second to see it.
-	*/
-	
+
 	$('#countdown-1').timeTo(".$time3.", function()
 	{
 		var time=".$time3.";
-		if(time==1)
+		/*if(time==1)
 		{
 			callsubmit1();
 		}
@@ -412,47 +351,23 @@ echo("<script>function showtime3()
 		{
 			alert('Countdown finished');
 			callsubmit1()
-		}
+		}*/
 		
 	});
 
-	/**
-	 * Set timer countdown to specified date
-	 */
 	$('#countdown-2').timeTo(
 	{
 		timeTo: new Date('Jul 10 2014 00:00:00'),
 	});
 	
-	/**
-	 * Set theme and captions
-	 */
 	$('#countdown-3').timeTo(
 	{
-		/*
-			timeTo: date object specify date and time for current time 
-			or for countdown to,
-			default null.
-		*/
+
 		timeTo: new Date('Jul 27 2014 12:00:00'),
-		/*
-			theme: string name of color theme,
-			available 'white' and 'black',
-			default 'white';
-		*/
+
 		theme: 'black',
-		/*
-			displayCaption: boolean if true then captions display, default false;
-		*/
 		displayCaptions: true,
-		/*
-			fontSize: integer font-size by pixels for digits, default 28;
-		*/
 		fontSize: 48,
-		/*
-			captionSize: integer font-size by pixels for captions,
-			if 0 then calculate automatically, default 0;
-		*/
 		captionSize: 14
 	});
 	}
@@ -498,7 +413,7 @@ function callsubmit1(){
 	var e32=document.getElementById("countdown-1").childNodes[7].firstChild.firstChild.innerHTML;
 	e32=parseInt(e32);
 	//alert(e32);
-	document.getElementById("txtendtime").value=e11+e12+colon1+e21+e22+colon2+e31+e32;
+	/*document.getElementById("txtendtime").value=e11+e12+colon1+e21+e22+colon2+e31+e32;*/
 	document.forms["f1"].submit();
 	//var x1= x[0].firstChild.innerHTML;
 }
@@ -541,7 +456,8 @@ function callsubmit1(){
 				<ul>
 					<?php
 				  echo("<script>
-						
+					var rhgt = $('.right_pert2').height();
+					$('.left_pert').height(rhgt+10);
 				  </script>
 				  ");
 				  	$tid=$_GET['tid'];?>
@@ -586,7 +502,7 @@ function callsubmit1(){
                     </select>                   
                     <?php
 					echo("<h1 id='level' style='color:#e05f03; margin-top:15px;'>&nbsp;&nbsp;Levels</h1><br>");
-					
+
 							echo("<div class='sub'><span><b><a href='#' name='btnlow' id='btnlow' value='0'  onclick='showtime()'><b>Low</b></a></b></span>&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnmid' value='1' id='btnmid' onclick='showtime2()'><b>Middle</b></a></b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><b><a href='#' name='btnhigh' value='2' id='btnhigh' onclick='showtime3()'><b>High</b></a></b></span></div><div id='clockcontainer' style='position:fixed; left:70%;'><div id='countdown-1'></div></div>");
                   ?>
                   <!--<form name='f1' method='post' action='getresult.php'>-->
@@ -594,8 +510,8 @@ function callsubmit1(){
                     <input type="text" name="txtclass" id="txtclass" value="<?php echo $rescl['class'];?>" style="display:none;"/>
                      <input type="text" name="txtsubject" id="txtsubject" value="<?php echo $subject1;?>" style="display:none;"/>
                       <input type="text" name="txttopic" id="txttopic" value="<?php echo $topic;?>" style="display:none;"/>
-                  <input type="text" name="txtendtime" id="txtendtime" style="display:none;"/>
-                  <input type="text" name="txtstarttime" id="txtstarttime" style="display:none;" /> 
+                  <!--input type="text" name="txtendtime" id="txtendtime" style="display:none;"/-->
+                  <!--input type="text" name="txtstarttime" id="txtstarttime" style="display:none;" /--> 
                   <div id='showquestions' height="100%" >
                   </div><!--/form-->
 				</ul>

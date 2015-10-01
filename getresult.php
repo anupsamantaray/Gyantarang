@@ -139,8 +139,8 @@ function popup()
 			margin:0;
 		}
 		.right_pert2 p{
-			font-size: 24px !important;
-			padding: 5px 0px 20px 0;
+			font-size: 19px !important;
+			padding: 8px 0px 8px 0;
 			font-weight: 300 !important;
 			color: #69A70B;
 			margin: 0px;
@@ -171,7 +171,13 @@ function popup()
 			padding:10px 15px;
 			text-decoration: none;
 		}
-	
+.quentnclass{
+	margin: 0 !important;
+	padding-top: 0  !important;
+    color: #666 !important;
+    font-size: 24px !important;
+    font-family: "trebuchet ms", sans-serif !important;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -314,7 +320,7 @@ for($i=0;$i<$j;$i++)
 		
 	//}
 	try{
-	echo("<h2> Question ".($i+1)."</h2>");
+	echo("<h2 class='quentnclass'> Question ".($i+1)."</h2>");
 	echo("<b>".$arrquestion[$i]."</b>");	
 	echo("<br>");
 	/*if($arranswer2[$i][1]==$correct[$i])
@@ -585,7 +591,7 @@ for($i=0;$i<$j;$i++)
    ?>
     <!--</form>-->
    <?php include_once('footer.php');?>
-   <div id="openModal" class="reveal-modal" style="width:400px;" >
+   <div id="openModal" class="reveal-modal" style="width:492px; top:100px; position:fixed;" >
 							<div>
                             <style>
 							#cross:link {color:blue;}
@@ -595,7 +601,7 @@ for($i=0;$i<$j;$i++)
 								
 							</style>
 									<div align="right" ><span style="text-align:right;"><a  class="close-reveal-modal" style="color:#F00;">X</a></span></div>
-										<h2><center>You need to study following concepts : </center></h2>
+										<h2 style="padding-top:76px; font-size:24px;"><center>You need to study following concepts : </center></h2>
                                         <?php
 										echo("<div style='padding-left:20px;'>");
 											for($r=1;$r<count($concept4);$r++)
