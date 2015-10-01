@@ -134,6 +134,9 @@ $(document).ready(function() {
 	});*/
 	var rhgt = $(".right_pert2").height();
 	$(".left_pert").height(rhgt+10);
+	$(".sbbjct").click(function(e){
+		$(e.currentTarget).addClass('active');
+	});
 });
 </script>
 <div class="container">
@@ -163,7 +166,11 @@ $(document).ready(function() {
 								while($rows_subject=mysql_fetch_assoc($result_subject)){
 									/*echo("<ul style='margin-left: 0px; padding: 1px 5px;'><li class='list active li_sub'><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a> </li>
 								</ul>");	*/
-									echo("<li class='list active li_sub'><a href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."'>".$rows_subject['subject']."</a> </li>");	
+									if($_REQUEST['sub'] == $rows_subject['subject']){
+										echo("<li class='list li_sub'><a class='active sbbjct' href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."&sub=".$rows_subject['subject']."'>".$rows_subject['subject']."</a> </li>");
+									}else{
+										echo("<li class='list li_sub'><a class='sbbjct' href='ShowQuizesPartTwo.php?sid=".$rows_subject['id']."&sub=".$rows_subject['subject']."'>".$rows_subject['subject']."</a> </li>");
+									}
 								}
 							}
 						?>
