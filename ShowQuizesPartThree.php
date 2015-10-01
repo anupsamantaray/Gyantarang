@@ -89,8 +89,8 @@
 			margin:0;
 		}
 		.right_pert2 p{
-			font-size: 24px !important;
-			padding: 5px 0px 20px 0;
+			font-size: 18px !important;
+			/*padding: 5px 0px 20px 0;*/
 			font-weight: 300 !important;
 			color: #69A70B;
 			margin: 0px;
