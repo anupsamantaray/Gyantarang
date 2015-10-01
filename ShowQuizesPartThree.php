@@ -207,10 +207,10 @@ echo ("<script>function showtime(){
 		//after 10 second it will show alert.
 		//wait for 10 second to see it.
 	 
-	$('#countdown-1').timeTo(".$time1.", function()
+	/*$('#countdown-1').timeTo(".$time1.", function()
 	{
 		var time=".$time1.";
-		/*if(time==1)
+		if(time==1)
 		{
 			callsubmit1();
 		}
@@ -218,24 +218,23 @@ echo ("<script>function showtime(){
 		{
 			alert('Countdown finished');
 			callsubmit1();
-		}*/
-	});
+		}
+	});*/
 
 	 //Set timer countdown to specified date
-	$('#countdown-2').timeTo(
+	/*$('#countdown-2').timeTo(
 	{
 		timeTo: new Date('Jul 10 2014 00:00:00'),
-	});
+	});*/
 	
-
-	$('#countdown-3').timeTo(
+	/*$('#countdown-3').timeTo(
 	{
 		timeTo: new Date('Jul 27 2014 12:00:00'),
 		theme: 'black',
 		displayCaptions: true,
 		fontSize: 48,
 		captionSize: 14
-	});
+	});*/
 	}
 	else
 	{
@@ -272,10 +271,10 @@ echo("<script>function showtime2()
         xmlhttp.send();
 
 	
-	$('#countdown-1').timeTo(".$time2.", function()
+	/*$('#countdown-1').timeTo(".$time2.", function()
 	{
 		var time=".$time2.";
-		/*if(time==1)
+		if(time==1)
 		{
 			callsubmit1();
 		}
@@ -283,18 +282,18 @@ echo("<script>function showtime2()
 		{
 			alert('Countdown finished');
 			callsubmit1();
-		}*/
+		}
 		
-	});
+	});*/
 
 
-	$('#countdown-2').timeTo(
+	/*$('#countdown-2').timeTo(
 	{
 		timeTo: new Date('Jul 10 2014 00:00:00'),
-	});
+	});*/
 	
 
-	$('#countdown-3').timeTo(
+	/*$('#countdown-3').timeTo(
 	{
 
 		timeTo: new Date('Jul 27 2014 12:00:00'),
@@ -305,7 +304,7 @@ echo("<script>function showtime2()
 
 		fontSize: 48,
 		captionSize: 14
-	});
+	});*/
 	}
 	else
 	{
@@ -340,10 +339,10 @@ echo("<script>function showtime3()
         xmlhttp.open('GET','getquestion2.php?q=+".$tid."&d=2&l1='+low1+'&up1='+up1,true);
         xmlhttp.send();
 
-	$('#countdown-1').timeTo(".$time3.", function()
+	/*$('#countdown-1').timeTo(".$time3.", function()
 	{
 		var time=".$time3.";
-		/*if(time==1)
+		if(time==1)
 		{
 			callsubmit1();
 		}
@@ -351,16 +350,16 @@ echo("<script>function showtime3()
 		{
 			alert('Countdown finished');
 			callsubmit1()
-		}*/
+		}
 		
-	});
+	});*/
 
-	$('#countdown-2').timeTo(
+	/*$('#countdown-2').timeTo(
 	{
 		timeTo: new Date('Jul 10 2014 00:00:00'),
-	});
+	});*/
 	
-	$('#countdown-3').timeTo(
+	/*$('#countdown-3').timeTo(
 	{
 
 		timeTo: new Date('Jul 27 2014 12:00:00'),
@@ -369,7 +368,7 @@ echo("<script>function showtime3()
 		displayCaptions: true,
 		fontSize: 48,
 		captionSize: 14
-	});
+	});*/
 	}
 	else
 	{
@@ -390,7 +389,7 @@ function blankfun()
 
 }
 function callsubmit1(){
-	var e11=document.getElementById("countdown-1").firstChild.firstChild.firstChild.innerHTML;
+	/*var e11=document.getElementById("countdown-1").firstChild.firstChild.firstChild.innerHTML;
 	e11=parseInt(e11);
 	
 	var e12=document.getElementById("countdown-1").childNodes[1].firstChild.firstChild.innerHTML;
@@ -411,7 +410,7 @@ function callsubmit1(){
 	e31=parseInt(e31);
 	//alert(e31);
 	var e32=document.getElementById("countdown-1").childNodes[7].firstChild.firstChild.innerHTML;
-	e32=parseInt(e32);
+	e32=parseInt(e32);*/
 	//alert(e32);
 	/*document.getElementById("txtendtime").value=e11+e12+colon1+e21+e22+colon2+e31+e32;*/
 	document.forms["f1"].submit();
